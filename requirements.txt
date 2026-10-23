@@ -1,0 +1,102 @@
+# =============================================================================
+# risk-quant-ml-lab — Python dependencies
+# -----------------------------------------------------------------------------
+# Target: Python 3.12, Apple Silicon (macOS 14+), conda env "quant-risk".
+# Versions were resolved together for macOS arm64 so that every package has a
+# pre-built wheel (no compiling needed).
+#
+# IMPORTANT — install `ecos` from conda-forge FIRST (scikit-survival needs it and
+# PyPI has no Apple Silicon wheel for it):
+#     conda install -c conda-forge ecos -y
+#     pip install -r requirements.txt
+# =============================================================================
+
+# --- Core numerics & data ----------------------------------------------------
+numpy==2.5.4
+pandas==3.0.6
+scipy==1.18.1
+pyarrow==25.0.1
+duckdb==1.5.6
+openpyxl==3.1.5
+
+# --- Visualisation -----------------------------------------------------------
+matplotlib==3.11.2
+seaborn==0.13.2
+plotly==7.1.0
+kaleido==1.5.0          # static PNG export of Plotly dashboards (uses your Chrome)
+
+# --- Classical statistics & econometrics -------------------------------------
+statsmodels==0.15.0
+arch==8.0.0             # GARCH family, VaR backtests
+hmmlearn==0.3.3         # hidden Markov models (regimes)
+ruptures==1.1.10        # change-point detection
+statsforecast==2.0.1
+chronos-forecasting==2.3.2  # Chronos-2 / Chronos-Bolt time-series foundation models
+
+# --- Machine learning --------------------------------------------------------
+scikit-learn==1.9.1
+xgboost==3.4.1
+lightgbm==4.7.0
+catboost==1.2.10
+imbalanced-learn==0.14.2
+optuna==5.0.0
+shap==0.54.1
+mapie==1.6.0            # conformal prediction
+tabicl==2.2.0           # tabular foundation model (in-context learning)
+
+# --- Backtesting & apps ------------------------------------------------------
+vectorbt==1.2.0
+streamlit==1.66.0
+pillow==12.3.0           # streamlit 1.66 requires pillow < 13
+
+# --- Survival analysis -------------------------------------------------------
+lifelines==0.30.0
+scikit-survival==0.28.0   # needs `ecos` from conda-forge (see header)
+
+# --- Bayesian ----------------------------------------------------------------
+pymc==6.3.2
+arviz==1.3.0
+
+# --- Optimisation & portfolio ------------------------------------------------
+cvxpy==1.9.3
+pyportfolioopt==1.6.0
+
+# --- Quant finance -----------------------------------------------------------
+QuantLib==1.44
+
+# --- Deep learning (PyTorch uses the M1 GPU through MPS) ---------------------
+torch==2.14.1
+keras==3.15.1            # Keras 3, run with KERAS_BACKEND=torch
+torch-geometric==2.8.1
+neuralforecast==3.3.0
+gymnasium==1.4.0
+stable-baselines3==2.9.0
+
+# --- NLP / LLM ---------------------------------------------------------------
+transformers==5.20.1
+sentence-transformers==6.1.0
+pysentiment2==0.1.1       # Loughran–McDonald financial sentiment dictionary
+spacy==3.8.16
+
+# --- MLOps -------------------------------------------------------------------
+mlflow==3.17.1
+
+# --- Data access, ETL & scraping ---------------------------------------------
+requests==2.34.2
+beautifulsoup4==4.15.0
+lxml==6.1.3
+yfinance==1.7.0
+fredapi==0.5.2
+kaggle==2.2.4
+ucimlrepo==0.0.7
+fsspec==2026.9.0        # reads remote Parquet files block by block (FNSPID news)
+aiohttp==3.14.5
+nbclient==0.11.0
+python-dotenv==1.2.4
+tqdm==4.70.1
+
+# --- Jupyter -----------------------------------------------------------------
+jupyter==1.1.1
+ipykernel==7.4.0
+ipywidgets==8.1.9
+nbformat==5.11.1

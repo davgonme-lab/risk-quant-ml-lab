@@ -1,0 +1,53 @@
+# =============================================================================
+# risk-quant-ml-lab — files that must never reach GitHub
+# =============================================================================
+
+# --- Secrets -------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+**/access_token
+**/kaggle.json
+
+# --- Raw / cached data ----------------------------------------------------------
+# Every project downloads its data on the fly into its own data/ folder.
+# Some sources (Freddie Mac, Kaggle competitions) forbid redistribution,
+# so data never goes into the repo — only code and results (outputs/).
+**/data/
+*.zip
+*.parquet
+*.feather
+*.h5
+
+# --- Python ---------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# --- ML tooling artefacts -------------------------------------------------------
+mlruns/
+mlartifacts/
+lightning_logs/
+catboost_info/
+**/checkpoints/
+*.pt
+*.ckpt
+
+# --- R ----------------------------------------------------------------------------
+.Rhistory
+.RData
+.Rproj.user/
+
+# --- OS / editors ----------------------------------------------------------------
+.DS_Store
+.vscode/
+.idea/
+
+# local helper, not part of the portfolio
+git_comandos_portafolio.xlsx
+
+# Delivery archives from Claude (not part of the repo)
+_entregas/
+*.tar.gz
