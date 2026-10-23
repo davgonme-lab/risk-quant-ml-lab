@@ -1,0 +1,4 @@
+bank,LightGBM percentile (all banks),LightGBM rank among >$10bn banks,Logistic percentile,equity / assets %,uninsured / deposits %,securities / assets %,asset growth 1y %,noncurrent loans %,top risk drivers
+Silicon Valley Bank,28.053635030379215,138,21.956840561491724,7.394295446499479,86.43729544184562,56.11598557117296,0.2133463738307917,0.18720790852402053,"efficiency ratio %, Tier 1 leverage %, nonres. CRE / equity"
+Signature Bank,96.71066415252461,6,81.94007961449822,7.260634275868911,89.66973334167974,23.696926478962958,-6.823207281780497,0.31869477705020993,"construction+multifamily CRE / equity, log assets, NIM %"
+First Republic Bank,91.09574690970041,24,80.34778965011523,8.204486242759979,67.71309706949528,14.916755672029714,17.42346307849938,0.06518233350692437,"construction+multifamily CRE / equity, log assets, cash / assets %"
