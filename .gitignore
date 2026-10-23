@@ -44,10 +44,3 @@ catboost_info/
 .DS_Store
 .vscode/
 .idea/
-
-# local helper, not part of the portfolio
-git_comandos_portafolio.xlsx
-
-# Delivery archives from Claude (not part of the repo)
-_entregas/
-*.tar.gz
