@@ -1,0 +1,7 @@
+,days inverted,share %,max gap (bp)
+AAA > AA,0,0.0,0.0
+AA > A,0,0.0,0.0
+A > BBB,0,0.0,0.0
+BBB > BB,0,0.0,0.0
+BB > B,0,0.0,0.0
+B > CCC & below,0,0.0,0.0
