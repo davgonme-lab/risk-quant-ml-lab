@@ -1,0 +1,7 @@
+,mean energy score (all test months),mean energy score (worst-decile equity months),group
+Unconditional bootstrap,1.9240624904632568,3.919783592224121,state
+VIX-analogue bootstrap,1.9004743099212646,3.9065518379211426,state
+Conditional VAE (VIX),1.883951187133789,3.910707712173462,state
+Linear-Gaussian | equity,1.5620924730501056,2.741174158582792,equity
+Historical analogues | equity,1.607703685760498,2.843106985092163,equity
+Conditional WGAN | equity,1.6236863136291504,2.8849122524261475,equity
