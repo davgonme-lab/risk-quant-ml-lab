@@ -1,0 +1,22 @@
+,item,amount,hqla,haircut,inflow,rsf,runoff,asf,uninsured
+assets,Reserves at the Fed,14.750382703961746,L1,0.0,0.0,0.0,,,
+assets,U.S. Treasuries,11.929532111524042,L1,0.0,0.0,0.05,,,
+assets,Agency MBS,10.604028543576927,L2A,0.15,0.0,0.15,,,
+assets,Municipal & IG corporate bonds,2.6510071358942318,L2B,0.5,0.0,0.5,,,
+assets,Other securities (non-HQLA),1.3255035679471159,,1.0,0.0,0.85,,,
+assets,Residential mortgages,19.56183923921761,,1.0,0.01,0.65,,,
+assets,Consumer & card loans,9.780919619608804,,1.0,0.04,0.85,,,
+assets,C&I loans,19.56183923921761,,1.0,0.03,0.85,,,
+assets,Commercial real estate,16.30153269934801,,1.0,0.01,0.85,,,
+assets,Other assets,13.533415139703905,,1.0,0.0,1.0,,,
+liabilities,Retail stable (insured),28.41191592560199,,,,,0.03,0.95,False
+liabilities,Retail less stable,14.205957962800994,,,,,0.1,0.9,False
+liabilities,Small business,6.31375909457822,,,,,0.1,0.9,False
+liabilities,Operational (corporate),11.049078415511886,,,,,0.25,0.5,True
+liabilities,Non-operational corporate,14.205957962800994,,,,,0.4,0.5,True
+liabilities,Financial institutions,4.735319320933665,,,,,1.0,0.0,True
+liabilities,Large time deposits (>30d),11.980192067144221,,,,,0.0,0.5,True
+liabilities,FHLB advances > 1y,6.593060437379592,,,,,0.0,1.0,False
+liabilities,Repo & short borrowings < 30d,4.395373624919728,,,,,0.25,0.0,False
+liabilities,Other liabilities,6.109385188328716,,,,,0.0,0.0,False
+liabilities,Equity,12.0,,,,,0.0,1.0,False
