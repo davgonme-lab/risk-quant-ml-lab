@@ -1,6 +1,6 @@
 # risk-quant-ml-lab
 
-**123 end-to-end projects applying machine learning and deep learning to credit, counterparty, market and liquidity risk, fraud, insurance and fintech.**
+**end-to-end projects applying machine learning and deep learning to credit, counterparty, market and liquidity risk, fraud, insurance and fintech.**
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue) ![R](https://img.shields.io/badge/R-4.x-276DC3) ![License: MIT](https://img.shields.io/badge/License-MIT-green) ![Projects](https://img.shields.io/badge/projects-123-orange)
 
