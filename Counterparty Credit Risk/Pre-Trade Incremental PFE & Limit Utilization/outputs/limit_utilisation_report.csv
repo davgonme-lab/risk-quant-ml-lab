@@ -1,0 +1,6 @@
+counterparty,rating,pfe_limit_mm,peak_pfe_mm,utilisation_pct,headroom_mm,n_trades,gross_notional_mm,status
+Bank D,BBB,180,204.0,113.4,-24.0,5,1000.0,breach
+Bank A,AA,250,216.6,86.6,33.4,5,725.0,watch
+Bank E,AA,100,85.4,85.4,14.6,5,525.0,watch
+Bank C,A,150,102.6,68.4,47.4,5,450.0,within
+Bank B,A,80,48.2,60.2,31.8,5,1250.0,within

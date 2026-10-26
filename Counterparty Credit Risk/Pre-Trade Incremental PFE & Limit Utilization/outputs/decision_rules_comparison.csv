@@ -1,0 +1,5 @@
+rule,auto-approved %,escalated %,false approvals,false approval rate %,needless escalations %
+Naive stand-alone add-on,47.0,53.0,0,0.0,29.083333333333332
+LightGBM point estimate,72.08333333333333,27.916666666666668,0,0.0,4.0
+LightGBM + conformal bound,63.33333333333333,36.666666666666664,0,0.0,12.75
+Exact Monte Carlo,76.08333333333334,23.916666666666668,0,0.0,0.0
