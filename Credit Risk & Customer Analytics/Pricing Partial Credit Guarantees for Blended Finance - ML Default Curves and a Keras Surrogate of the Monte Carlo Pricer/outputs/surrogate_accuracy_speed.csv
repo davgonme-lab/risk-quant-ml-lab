@@ -1,0 +1,8 @@
+,value
+surrogate MAE vs truth (bp),2.5230962130499357
+surrogate median rel. error,0.0035487152440856207
+4k-path MC MAE vs truth (bp),0.6557298961851976
+MC ms per sheet (4k paths),21.436765149374992
+surrogate µs per sheet,2.18739513750279
+speed-up ×,9800.133858690015
+epochs,200.0
