@@ -1,0 +1,15 @@
+# Code style for every notebook and script in this repository.
+# Format with:  black --line-length 79 .   and   ruff check .
+
+[tool.black]
+line-length = 79
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 79
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+

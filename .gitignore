@@ -44,3 +44,6 @@ catboost_info/
 .DS_Store
 .vscode/
 .idea/
+
+# --- Local delivery bundles (never versioned) ---
+_entregas/
