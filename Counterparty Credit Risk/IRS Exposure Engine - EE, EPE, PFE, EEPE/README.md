@@ -1,9 +1,16 @@
 # IRS Exposure Engine: EE, EPE, PFE, EEPE
 
-**What it does:** simulates thousands of future interest-rate scenarios and revalues a book of SOFR swaps with five bank counterparties on each one, producing the exposure profiles a counterparty-risk desk monitors against credit limits.
-**Data:** today's SOFR discount curve (FRED SOFR, U.S. Treasury par curve and an explicit swap-spread term structure) and three years of Treasury yields (FRED) for volatility calibration.
-**Methods:** Hull–White 1F calibrated to the historical term structure of volatility, exact Monte Carlo with analytic swap revaluation, netting by counterparty, Basel IMM metrics, plus LSM-regression and PyTorch neural-network pricing surrogates.
-**Key output:** EE / PFE / ENE profiles and netting benefits per counterparty, peak PFE vs limits with traffic lights, and a speed/accuracy comparison of the surrogates.
+A swap that is worth nothing today can be worth a lot tomorrow, and if the bank on the other side defaults on that day, the value is lost. Counterparty-risk desks therefore look at the whole range of values a swap book could take in the future. This notebook builds the engine that produces those exposure profiles.
+
+**What it does.** It simulates thousands of future interest-rate scenarios and revalues a book of SOFR swaps with five bank counterparties on each one. The result is the set of exposure profiles a counterparty-risk desk monitors against credit limits.
+
+**Data.** Today's SOFR discount curve, built from FRED SOFR, the U.S. Treasury par curve and an explicit swap-spread term structure, plus three years of Treasury yields (FRED) to calibrate rate volatility.
+
+**Methods.** A Hull–White one-factor model calibrated to the historical term structure of volatility, exact Monte Carlo simulation with analytic swap revaluation, netting by counterparty, and the Basel IMM metrics (EE, EPE, EEPE, PFE at 97.5%).
+
+Two fast-pricing surrogates are tested against the exact engine: a Longstaff–Schwartz regression and a PyTorch neural network.
+
+**Key output.** Exposure profiles and netting benefits per counterparty, PFE against limits with a traffic-light view of limit use, and a comparison of the surrogates' speed and accuracy.
 
 ---
 
@@ -66,3 +73,20 @@ The swap book is synthetic, since real trade books are confidential. All rates a
 6. `swap revaluation and netting-set exposure metrics`
 7. `LSM and neural-network pricing surrogates`
 8. `counterparty dashboard and executed outputs`
+
+## References
+
+### Finance and regulation
+
+- Basel Committee on Banking Supervision. (2005). *The application of Basel II to trading activities and the treatment of double default effects*. Bank for International Settlements. https://www.bis.org/publ/bcbs116.htm
+- Gregory, J. (2020). *The xVA challenge: Counterparty risk, funding, collateral, capital and initial margin* (4th ed.). Wiley. https://doi.org/10.1002/9781119508991
+- Hull, J., & White, A. (1990). Pricing interest-rate-derivative securities. *The Review of Financial Studies, 3*(4), 573–592. https://doi.org/10.1093/rfs/3.4.573
+- Brigo, D., & Mercurio, F. (2006). *Interest rate models: Theory and practice* (2nd ed.). Springer. https://doi.org/10.1007/978-3-540-34604-3
+- Cesari, G., Aquilina, J., Charpillon, N., Filipović, Z., Lee, G., & Manda, I. (2009). *Modelling, pricing, and hedging counterparty credit exposure: A technical guide*. Springer. https://doi.org/10.1007/978-3-642-04454-0
+
+### Machine learning and deep learning
+
+- Longstaff, F. A., & Schwartz, E. S. (2001). Valuing American options by simulation: A simple least-squares approach. *The Review of Financial Studies, 14*(1), 113–147. https://doi.org/10.1093/rfs/14.1.113
+- Hornik, K., Stinchcombe, M., & White, H. (1989). Multilayer feedforward networks are universal approximators. *Neural Networks, 2*(5), 359–366. https://doi.org/10.1016/0893-6080(89)90020-8
+- Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., … Chintala, S. (2019). PyTorch: An imperative style, high-performance deep learning library. *Advances in Neural Information Processing Systems, 32*. https://arxiv.org/abs/1912.01703
+- Kingma, D. P., & Ba, J. (2015). Adam: A method for stochastic optimization. In *Proceedings of the 3rd International Conference on Learning Representations*. https://arxiv.org/abs/1412.6980
