@@ -1,12 +1,26 @@
 # risk-quant-ml-lab
 
-**end-to-end projects applying machine learning and deep learning to credit, counterparty, market and liquidity risk, fraud, insurance and fintech.**
+**End-to-end projects applying machine learning and deep learning across finance: risk management, capital markets and investments, fixed income, securitization, insurance, pensions and actuarial science, and fintech.**
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue) ![R](https://img.shields.io/badge/R-4.x-276DC3) ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-**What would a risk desk build if it had a modern ML toolkit?** This repository answers that question with a growing set of self-contained projects. Each one starts from a real risk problem: measuring the potential future exposure of a swap book, hedging a multilateral bank's bond portfolio with SOFR swaps, stress-testing a mortgage pool, or forecasting when a funding market is about to crack. It then solves the problem end to end, with public data, transparent models and a dashboard a risk committee could read. Classic models (Hull-White, Vasicek, GARCH, Nelson-Siegel) sit side by side with gradient boosting, survival analysis, transformers, GNNs and reinforcement learning, so you can see exactly where ML adds value and where it doesn't.
+**What would a finance team build if it had a modern ML toolkit?** This repository answers that question from many seats: a risk desk, a bank treasury, a portfolio manager, a fixed-income trader, a structured-finance analyst, an actuary, a pension fund and a fintech lender. Each project starts from a real problem: measuring the potential future exposure of a swap book, hedging a multilateral bank's bond portfolio with SOFR swaps, pricing an autocallable, stress-testing a mortgage pool, projecting when Social Security's trust fund runs out, or forecasting when a funding market is about to crack. It then solves the problem end to end, with public data, transparent models and a dashboard a committee could read. Classic models (Hull-White, Vasicek, GARCH, Nelson-Siegel, Lee-Carter, chain ladder) sit side by side with gradient boosting, survival analysis, transformers, GNNs, language models and reinforcement learning, so you can see exactly where ML adds value and where it doesn't.
+
+---
+
+## What's inside
+
+| Area | Themes | Examples |
+|---|---|---|
+| **Risk management** | Credit risk, counterparty credit risk, market risk, liquidity risk and ALM, AI and model risk, fraud and financial crime | Swap exposure and XVA, PD scorecards and IFRS 9 / CECL, VaR and Expected Shortfall, LCR and IRRBB, model validation, anti-money laundering with graph ML |
+| **Capital markets and investments** | Valuation and portfolio management, fixed income and hedging, yield curves and volatility surfaces, market microstructure | DCF with ML forecasts, option and autocallable pricing, portfolio construction and factor models, bond risk and hedging, SOFR and €STR curves, optimal execution |
+| **Structured finance** | Securitization and covered bonds | Mortgage prepayment and default, ABS/MBS waterfalls, covered-bond cover pools and spreads |
+| **Insurance, pensions and actuarial science** | Life, non-life and catastrophe insurance, pensions, social security | Mortality forecasting, claims reserving, IFRS 17, parametric and index insurance, pension valuation and funding, longevity swaps, the Social Security trust fund |
+| **Fintech and digital assets** | Digital lending, crypto and DeFi | Open-banking underwriting, peer-to-peer lending, stablecoin depegs, DeFi liquidation cascades |
+
+The folders in the project index below follow these themes.
 
 ---
 
@@ -17,17 +31,17 @@ Projects are grouped in thematic folders. Each project lives in its own folder a
 Every notebook follows the same path:
 
 1. **Summary.** Why the problem matters, what the notebook does, the data, the methods and the key output.
-2. **Business context.** Why a risk team cares.
+2. **Business context.** Why the team that owns the problem (risk, treasury, trading, investment, actuarial or finance) cares.
 3. **Theory.** The intuition first, then the math that matters.
 4. **Data & ETL.** Downloaded live from the original source, with exact links.
 5. **Exploratory analysis**
 6. **Modelling**
 7. **Validation & backtesting**
-8. **Results dashboard & risk interpretation.** What the numbers mean for a decision.
+8. **Results dashboard & interpretation.** What the numbers mean for a decision.
 9. **Limitations & extensions**
 10. **References.** Six to ten sources in APA style with a DOI or link, split into finance and regulation, and machine learning and deep learning.
 
-**Market focus.** US markets: SOFR, Treasuries, US ETFs and indices. Several projects use a multilateral-development-bank-style treasury portfolio built from real bond holdings of sovereigns, supranationals and agencies, sub-sovereigns, banks and corporates, hedged with SOFR swaps. Local-currency risk is covered with COP, MXN, BRL and CLP.
+**Market focus.** Mostly US markets and institutions: SOFR, Treasuries, US ETFs and indices, agency mortgage loans, SEC filings, US pension plans and Social Security. Several projects use a multilateral-development-bank-style treasury portfolio built from real bond holdings of sovereigns, supranationals and agencies, sub-sovereigns, banks and corporates, hedged with SOFR swaps. Others cover Europe (covered bonds, €STR and EURIBOR curves) and Latin America (COP, MXN, BRL and CLP risk, Colombian farm insurance, disaster risk financing).
 
 **Code style.** Python code follows PEP 8 with a 79-character line limit, enforced with `black` and `ruff` (settings in `pyproject.toml`); R code is formatted with `styler`.
 
@@ -314,7 +328,7 @@ Then open `00_connection_check.ipynb` and run it. It tests every data source and
 
 ## Author
 
-**David Andrés González Medina**. Risk, treasury and quantitative finance.
+**David Andrés González Medina**. Risk, treasury, quantitative finance and actuarial analytics.
 LinkedIn: *add link here*
 
 ## License
