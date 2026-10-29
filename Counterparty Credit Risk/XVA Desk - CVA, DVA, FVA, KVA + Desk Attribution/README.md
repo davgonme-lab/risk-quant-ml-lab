@@ -1,9 +1,22 @@
 # XVA Desk: CVA, DVA, FVA, KVA + Desk Attribution
 
-**What it does:** prices the valuation adjustments of a reference book of SOFR swaps with five banks (credit, debit, funding and capital), stresses CVA for wrong-way risk, allocates every adjustment to trades and trading desks with Euler and Shapley methods, and trains a differential neural network that delivers CVA and its sensitivities in microseconds.
-**Data:** today's SOFR curve and Treasury volatility (U.S. Treasury, FRED), and ICE BofA corporate option-adjusted spreads by rating (FRED: AAA, AA, A, BBB), converted into hazard rates.
-**Methods:** Hull–White Monte Carlo with pathwise discounting; CVA, DVA, FCA/FBA and KVA (CCR capital + BA-CVA) on discounted exposure profiles; a stochastic-intensity wrong-way-risk model correlated with rates; Euler and Shapley allocation; differential machine learning (Huge & Savine, 2020) trained on single-path payoffs with their automatic-differentiation pathwise derivatives in PyTorch.
-**Key output:** an XVA table by counterparty and by desk, the wrong-way risk multiplier as a function of correlation, Euler vs Shapley vs stand-alone allocation, and a neural CVA pricer whose rate, vol and credit deltas are checked against brute-force Monte Carlo.
+A swap is never worth just its risk-free price. The bank on the other side can default, the positions have to be funded, and the regulator asks for capital against both. The XVA desk puts a price on each of those costs and decides which trading desk pays for them.
+
+This notebook builds that desk for a multilateral development bank (MDB) that hedges its bond issuance with SOFR swaps traded with five commercial banks.
+
+**What it does.** It prices the credit, debit, funding and capital adjustments of the book and stresses CVA for wrong-way risk. It then splits every adjustment across trades and desks with the Euler and Shapley methods.
+
+Last, it trains a differential neural network that returns CVA and its sensitivities in microseconds.
+
+**Data.** Today's SOFR curve and Treasury volatility (U.S. Treasury, FRED), plus ICE BofA corporate option-adjusted spreads by rating (FRED: AAA, AA, A, BBB), turned into hazard rates.
+
+**Methods.** Hull–White Monte Carlo with pathwise discounting, and CVA, DVA, FCA/FBA and KVA (CCR capital plus BA-CVA) on discounted exposure profiles. Wrong-way risk comes from a default intensity that moves with rates.
+
+The allocation uses Euler and Shapley. The neural pricer follows differential machine learning (Huge & Savine, 2020): it trains on single-path payoffs together with their pathwise derivatives, computed by automatic differentiation in PyTorch.
+
+**Key output.** An XVA table by counterparty and by desk, the wrong-way risk multiplier as a function of correlation, and a comparison of Euler, Shapley and stand-alone allocation.
+
+It also delivers a neural CVA pricer whose rate, vol and credit deltas are checked against brute-force Monte Carlo.
 
 ---
 
@@ -52,3 +65,21 @@ Counterparty risk has a price. The notebook computes CVA, DVA, FVA and KVA for a
 4. `wrong-way risk with stochastic intensity`
 5. `Euler, Shapley and desk attribution`
 6. `differential ML CVA pricer in PyTorch with executed outputs`
+
+## References
+
+### Finance and regulation
+
+- Basel Committee on Banking Supervision. (2014). *The standardised approach for measuring counterparty credit risk exposures*. Bank for International Settlements. https://www.bis.org/publ/bcbs279.htm
+- Basel Committee on Banking Supervision. (2020). *Targeted revisions to the credit valuation adjustment risk framework*. Bank for International Settlements. https://www.bis.org/bcbs/publ/d507.htm
+- Brigo, D., Morini, M., & Pallavicini, A. (2013). *Counterparty credit risk, collateral and funding: With pricing cases for all asset classes*. Wiley. https://doi.org/10.1002/9781118818589
+- Green, A., Kenyon, C., & Dennis, C. (2014). KVA: Capital valuation adjustment by replication. *Risk, 27*(12). https://arxiv.org/abs/1405.0515
+- Hull, J., & White, A. (1990). Pricing interest-rate-derivative securities. *The Review of Financial Studies, 3*(4), 573–592. https://doi.org/10.1093/rfs/3.4.573
+- Hull, J., & White, A. (2012). CVA and wrong-way risk. *Financial Analysts Journal, 68*(5), 58–69. https://doi.org/10.2469/faj.v68.n5.6
+- Tasche, D. (2008). Capital allocation to business units and sub-portfolios: The Euler principle. In A. Resti (Ed.), *Pillar II in the new Basel Accord*. Risk Books. https://arxiv.org/abs/0708.2542
+
+### Machine learning and deep learning
+
+- Huge, B., & Savine, A. (2020). Differential machine learning. *arXiv*. https://arxiv.org/abs/2005.02347
+- Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., … Chintala, S. (2019). PyTorch: An imperative style, high-performance deep learning library. *Advances in Neural Information Processing Systems, 32*. https://arxiv.org/abs/1912.01703
+- Shapley, L. S. (1953). A value for n-person games. In H. W. Kuhn & A. W. Tucker (Eds.), *Contributions to the theory of games II* (pp. 307–317). Princeton University Press. https://doi.org/10.1515/9781400881970-018
