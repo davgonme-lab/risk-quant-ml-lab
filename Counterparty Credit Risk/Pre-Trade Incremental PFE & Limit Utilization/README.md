@@ -1,9 +1,16 @@
 # Pre-Trade Incremental PFE & Limit Utilization
 
-**What it does:** builds the pre-trade credit check a counterparty-risk officer signs off. For a proposed swap it estimates the *incremental* PFE on the bank's netting set in milliseconds, decides whether the trade fits within the limit, and routes it to auto-approval, a full simulation or the credit officer. Limits, trades and decisions live in SQL tables.
-**Data:** today's SOFR curve and Treasury volatility (U.S. Treasury, FRED); a reference book of SOFR swaps with five banks and limits; 4,000 simulated trade requests (synthetic).
-**Methods:** Hull–White Monte Carlo with exact incremental revaluation, LightGBM regression of incremental peak PFE with netting-set features, split-conformal upper bounds for a guaranteed false-approval rate, and DuckDB for the limit database, the utilisation report and the decision log.
-**Key output:** a utilisation and headroom report, the decision rule's false-approval and escalation rates against the naive stand-alone add-on rule, and a pre-trade dashboard.
+Before a trader can add a swap with a bank, credit has to say yes, and the answer is needed in seconds, not after an overnight simulation. The right question is not how risky the new trade is on its own, but what it does to everything already on the books with that bank. This notebook builds that pre-trade check with a fast model and a statistical guarantee on how often it can be wrong.
+
+**What it does.** It builds the pre-trade credit check a counterparty-risk officer signs off. For a proposed swap it estimates the *incremental* PFE on the bank's netting set in milliseconds, decides whether the trade fits within the limit, and sends it to auto-approval, a full simulation or the credit officer.
+
+Limits, trades and decisions live in SQL tables.
+
+**Data.** Today's SOFR curve and Treasury volatility (U.S. Treasury, FRED), a reference book of SOFR swaps with five banks and their limits, and 4,000 simulated trade requests (synthetic).
+
+**Methods.** Hull–White Monte Carlo with exact incremental revaluation, a LightGBM regression of incremental peak PFE with netting-set features, and split-conformal upper bounds that guarantee the false-approval rate. DuckDB holds the limit database, the utilisation report and the decision log.
+
+**Key output.** A utilisation and headroom report, the decision rule's false-approval and escalation rates compared with the naive stand-alone add-on rule, and a pre-trade dashboard.
 
 ---
 
@@ -46,3 +53,19 @@ Every new trade needs a credit check against the netting set, not against the tr
 3. `exact incremental PFE for simulated requests`
 4. `LightGBM model and conformal upper bound`
 5. `decision rules, SQL decision log, dashboard and executed outputs`
+
+## References
+
+### Finance and regulation
+
+- Gregory, J. (2020). *The xVA challenge: Counterparty risk, funding, collateral, capital and initial margin* (4th ed.). Wiley. https://doi.org/10.1002/9781119508991
+- Basel Committee on Banking Supervision. (2014). *The standardised approach for measuring counterparty credit risk exposures*. Bank for International Settlements. https://www.bis.org/publ/bcbs279.htm
+- Hull, J., & White, A. (1990). Pricing interest-rate-derivative securities. *The Review of Financial Studies, 3*(4), 573–592. https://doi.org/10.1093/rfs/3.4.573
+- Cesari, G., Aquilina, J., Charpillon, N., Filipović, Z., Lee, G., & Manda, I. (2009). *Modelling, pricing, and hedging counterparty credit exposure: A technical guide*. Springer. https://doi.org/10.1007/978-3-642-04454-0
+
+### Machine learning and deep learning
+
+- Lei, J., G'Sell, M., Rinaldo, A., Tibshirani, R. J., & Wasserman, L. (2018). Distribution-free predictive inference for regression. *Journal of the American Statistical Association, 113*(523), 1094–1111. https://doi.org/10.1080/01621459.2017.1307116
+- Vovk, V., Gammerman, A., & Shafer, G. (2005). *Algorithmic learning in a random world*. Springer. https://doi.org/10.1007/b106715
+- Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., & Liu, T.-Y. (2017). LightGBM: A highly efficient gradient boosting decision tree. *Advances in Neural Information Processing Systems, 30*. https://proceedings.neurips.cc/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html
+- Raasveldt, M., & Mühleisen, H. (2019). DuckDB: An embeddable analytical database. In *Proceedings of the 2019 International Conference on Management of Data*. https://doi.org/10.1145/3299869.3320212
