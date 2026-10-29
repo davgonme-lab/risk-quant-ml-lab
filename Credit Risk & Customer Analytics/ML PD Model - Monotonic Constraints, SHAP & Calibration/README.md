@@ -1,9 +1,18 @@
 # ML PD Model: Monotonic Constraints, SHAP & Calibration
 
-**What it does:** builds a gradient-boosting PD model on the Home Credit loan applications, with features engineered in SQL from the credit-bureau, previous-application and instalment histories. It compares an unconstrained LightGBM with one whose key risk drivers are forced to be monotonic, measures what the constraints cost in accuracy and what they buy in behaviour, calibrates the PDs (Platt and isotonic), and explains every decision with TreeSHAP and reason codes.
-**Data:** Home Credit Default Risk (Kaggle competition): 307,511 applications with 8.1% defaults, plus 1.7 million bureau records, 1.7 million previous applications and 13.6 million instalment payments.
-**Methods:** DuckDB feature aggregation; logistic-regression benchmark; LightGBM with and without `monotone_constraints`; ICE-based monotonicity tests; class weighting and its effect on calibration; Platt scaling vs isotonic regression with Brier score, expected calibration error and reliability curves; TreeSHAP global and local explanations.
-**Key output:** discrimination of the three models; the accuracy cost of monotonicity; calibration before and after; SHAP drivers; and an explained decision for a single applicant.
+Gradient boosting usually beats a scorecard at ranking borrowers, but a model-risk team will only approve it if it behaves sensibly, gives probabilities at the right level, and can explain every decline. This notebook builds a boosted PD model that meets those three conditions and measures what each one costs.
+
+**What it does.** It builds a gradient-boosting PD model on the Home Credit loan applications, with features engineered in SQL from the credit-bureau, previous-application and instalment histories.
+
+It compares an unconstrained LightGBM with one whose key risk drivers are forced to be monotonic, and measures what the constraints cost in accuracy and what they buy in behaviour. It then calibrates the PDs (Platt and isotonic) and explains every decision with TreeSHAP and reason codes.
+
+**Data.** Home Credit Default Risk (Kaggle competition): 307,511 applications with 8.1% defaults, plus 1.7 million bureau records, 1.7 million previous applications and 13.6 million instalment payments.
+
+**Methods.** DuckDB feature aggregation, a logistic-regression benchmark, LightGBM with and without `monotone_constraints`, and ICE-based monotonicity tests.
+
+The calibration work covers class weighting and its effect on probabilities, and Platt scaling against isotonic regression, scored with the Brier score, expected calibration error and reliability curves. TreeSHAP gives global and local explanations.
+
+**Key output.** Discrimination of the three models, the accuracy cost of monotonicity, calibration before and after, SHAP drivers, and an explained decision for a single applicant.
 
 ---
 
@@ -46,3 +55,19 @@ Gradient boosting is the standard challenger to a scorecard, and model-risk team
 3. `logistic benchmark and LightGBM with and without constraints`
 4. `ICE monotonicity tests and calibration`
 5. `TreeSHAP, reason codes, gender screen and executed outputs`
+
+## References
+
+### Finance and regulation
+
+- Board of Governors of the Federal Reserve System. (2011). *Supervisory guidance on model risk management* (SR 11-7). https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107.htm
+- Lessmann, S., Baesens, B., Seow, H.-V., & Thomas, L. C. (2015). Benchmarking state-of-the-art classification algorithms for credit scoring: An update of research. *European Journal of Operational Research, 247*(1), 124–136. https://doi.org/10.1016/j.ejor.2015.05.030
+- Bussmann, N., Giudici, P., Marinelli, D., & Papenbrock, J. (2021). Explainable machine learning in credit risk management. *Computational Economics, 57*(1), 203–216. https://doi.org/10.1007/s10614-020-10042-0
+
+### Machine learning and deep learning
+
+- Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., & Liu, T.-Y. (2017). LightGBM: A highly efficient gradient boosting decision tree. *Advances in Neural Information Processing Systems, 30*. https://proceedings.neurips.cc/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html
+- Lundberg, S. M., Erion, G., Chen, H., DeGrave, A., Prutkin, J. M., Nair, B., … Lee, S.-I. (2020). From local explanations to global understanding with explainable AI for trees. *Nature Machine Intelligence, 2*(1), 56–67. https://doi.org/10.1038/s42256-019-0138-9
+- Zadrozny, B., & Elkan, C. (2002). Transforming classifier scores into accurate multiclass probability estimates. In *Proceedings of the Eighth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*. https://doi.org/10.1145/775047.775151
+- Goldstein, A., Kapelner, A., Bleich, J., & Pitkin, E. (2015). Peeking inside the black box: Visualizing statistical learning with plots of individual conditional expectation. *Journal of Computational and Graphical Statistics, 24*(1), 44–65. https://doi.org/10.1080/10618600.2014.907095
+- Guo, C., Pleiss, G., Sun, Y., & Weinberger, K. Q. (2017). On calibration of modern neural networks. In *Proceedings of the 34th International Conference on Machine Learning*. https://arxiv.org/abs/1706.04599
