@@ -1,9 +1,18 @@
 # PD Scorecard: WoE / IV + Logistic Regression
 
-**What it does:** builds a classic application-style credit scorecard in Python from scratch: monotonic optimal binning, weight of evidence (WoE) and information value (IV), a stepwise logistic regression on WoE, and points scaling. It then validates it the way a model-risk team would (Gini, KS, bootstrap confidence intervals, calibration, PSI), compares it with a LightGBM challenger, sets a cutoff, produces adverse-action reason codes and runs a fair-lending check.
-**Data:** the UCI *Default of Credit Card Clients* dataset: 30,000 Taiwanese card holders, six months of repayment history and default on the next payment (`ucimlrepo`, with the UCI mirror on Kaggle as a fallback).
-**Methods:** chi-square-merged monotonic binning written by hand; WoE/IV; forward stepwise logistic regression with sign and VIF checks; 600 points at 50:1 odds and 20 points to double the odds; ROC/Gini/KS with bootstrap intervals; Hosmer–Lemeshow; PSI; LightGBM challenger; DuckDB strategy table; ECOA-style reason codes and adverse-impact ratios.
-**Key output:** the scorecard points table; validation metrics and their confidence intervals; the accuracy given up for interpretability; the cutoff strategy; and the fair-lending check.
+The points scorecard is decades old and still runs most retail and small-business lending, because a loan officer can read it and a regulator can audit it. This notebook builds one from scratch in Python, validates it the way a model-risk team would, and measures how much accuracy that transparency costs against a modern challenger.
+
+**What it does.** It builds a classic application-style credit scorecard: monotonic optimal binning, weight of evidence (WoE) and information value (IV), a stepwise logistic regression on WoE, and points scaling.
+
+It then validates the scorecard (Gini, KS, bootstrap confidence intervals, calibration, PSI), compares it with a LightGBM challenger, sets a cutoff, produces adverse-action reason codes and runs a fair-lending check.
+
+**Data.** The UCI *Default of Credit Card Clients* dataset: 30,000 Taiwanese card holders, six months of repayment history and default on the next payment (`ucimlrepo`, with the UCI mirror on Kaggle as a fallback).
+
+**Methods.** Chi-square-merged monotonic binning written by hand, WoE/IV, forward stepwise logistic regression with sign and VIF checks, and points scaled to 600 at 50:1 odds with 20 points to double the odds.
+
+Validation uses ROC, Gini and KS with bootstrap intervals, Hosmer–Lemeshow and PSI. A LightGBM challenger, a DuckDB strategy table, ECOA-style reason codes and adverse-impact ratios complete the picture.
+
+**Key output.** The scorecard points table, validation metrics with confidence intervals, the accuracy given up for interpretability, the cutoff strategy and the fair-lending check.
 
 ---
 
@@ -46,3 +55,18 @@ The WoE/logistic scorecard is still the benchmark for retail and SME PD models. 
 3. `monotonic binning, WoE and IV`
 4. `stepwise logistic model and points scaling`
 5. `validation, challenger, cutoff, reason codes, fair-lending check and executed outputs`
+
+## References
+
+### Finance and regulation
+
+- Siddiqi, N. (2017). *Intelligent credit scoring: Building and implementing better credit risk scorecards* (2nd ed.). Wiley. https://doi.org/10.1002/9781119282396
+- Thomas, L. C., Crook, J., & Edelman, D. (2017). *Credit scoring and its applications* (2nd ed.). SIAM. https://doi.org/10.1137/1.9781611974560
+- Yeh, I.-C., & Lien, C.-H. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. *Expert Systems with Applications, 36*(2), 2473–2480. https://doi.org/10.1016/j.eswa.2007.12.020
+- Basel Committee on Banking Supervision. (2005). *Studies on the validation of internal rating systems* (Working Paper No. 14). Bank for International Settlements. https://www.bis.org/publ/bcbs_wp14.htm
+
+### Machine learning and deep learning
+
+- Hosmer, D. W., Lemeshow, S., & Sturdivant, R. X. (2013). *Applied logistic regression* (3rd ed.). Wiley. https://doi.org/10.1002/9781118548387
+- Efron, B., & Tibshirani, R. J. (1993). *An introduction to the bootstrap*. Chapman & Hall. https://doi.org/10.1201/9780429246593
+- Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., & Liu, T.-Y. (2017). LightGBM: A highly efficient gradient boosting decision tree. *Advances in Neural Information Processing Systems, 30*. https://proceedings.neurips.cc/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html
