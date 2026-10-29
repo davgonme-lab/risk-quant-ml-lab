@@ -1,9 +1,14 @@
 # Fixed Income Sensitivities: Duration, Convexity, DV01, KRD + Curve PCA
 
-**What it does:** computes the full set of interest-rate sensitivities of a USD 1 billion MDB-style treasury portfolio built from real bonds, and checks how well each measure predicts the P&L of realistic curve scenarios.
-**Data:** live bond-level holdings of four iShares ETFs (Treasuries, agencies, sub-sovereigns, banks, corporates), today's Treasury par curve (U.S. Treasury) and 10 years of daily Treasury yields (FRED).
-**Methods:** yield-based and effective duration and convexity, DV01, key-rate durations, PCA of curve moves for level / slope / curvature scenarios, and full revaluation versus first- and second-order Taylor approximations.
-**Key output:** a sensitivity report by bond and by sleeve, a key-rate heatmap, a scenario P&L table (parallel, twist, butterfly, PCA, historical) and a map of where the duration approximation breaks down.
+"What is the duration?" is the first question about any bond portfolio, and the answer is never enough on its own, because real yield curves rarely move in parallel. This notebook computes the full set of interest-rate sensitivities for a real portfolio and checks how well each one predicts the P&L of realistic curve moves.
+
+**What it does.** It computes the full set of interest-rate sensitivities of a USD 1 billion MDB-style treasury portfolio built from real bonds, and checks how well each measure predicts the P&L of realistic curve scenarios.
+
+**Data.** Live bond-level holdings of four iShares ETFs (Treasuries, agencies, sub-sovereigns, banks, corporates), today's Treasury par curve (U.S. Treasury) and 10 years of daily Treasury yields (FRED).
+
+**Methods.** Yield-based and curve-based (effective) duration and convexity, DV01, key-rate durations, and PCA of curve moves to build level, slope and curvature scenarios. Full revaluation is compared with first- and second-order Taylor approximations.
+
+**Key output.** A sensitivity report by bond and by sleeve, a key-rate risk heatmap, a scenario P&L table (parallel, twist, butterfly, PCA and historical), and a map of where the duration approximation breaks down.
 
 ---
 
@@ -48,3 +53,17 @@ Duration is the first number anyone asks for, and it is only exact for small par
 3. `bond-level duration, convexity, DV01 and KR01`
 4. `curve PCA and scenario design`
 5. `full revaluation vs Taylor approximations and executed outputs`
+
+## References
+
+### Finance and regulation
+
+- Ho, T. S. Y. (1992). Key rate durations: Measures of interest rate risks. *The Journal of Fixed Income, 2*(2), 29–44. https://doi.org/10.3905/jfi.1992.408049
+- Litterman, R., & Scheinkman, J. (1991). Common factors affecting bond returns. *The Journal of Fixed Income, 1*(1), 54–61. https://doi.org/10.3905/jfi.1991.692347
+- Tuckman, B., & Serrat, A. (2022). *Fixed income securities: Tools for today's markets* (4th ed.). Wiley. https://doi.org/10.1002/9781119835622
+- Golub, B. W., & Tilman, L. M. (1997). Measuring yield curve risk using principal components analysis, value at risk, and key rate durations. *The Journal of Portfolio Management, 23*(4), 72–84. https://doi.org/10.3905/jpm.1997.409612
+- Redington, F. M. (1952). Review of the principles of life-office valuations. *Journal of the Institute of Actuaries, 78*(3), 286–340. https://doi.org/10.1017/S0020268100052811
+
+### Machine learning and deep learning
+
+- Jolliffe, I. T., & Cadima, J. (2016). Principal component analysis: A review and recent developments. *Philosophical Transactions of the Royal Society A, 374*(2065), 20150202. https://doi.org/10.1098/rsta.2015.0202
