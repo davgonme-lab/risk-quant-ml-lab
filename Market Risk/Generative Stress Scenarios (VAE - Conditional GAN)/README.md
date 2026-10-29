@@ -1,9 +1,20 @@
 # Generative Stress Scenarios (VAE / Conditional GAN)
 
-**What it does:** learns the joint monthly distribution of eight U.S. market risk factors (equities, small caps, VIX, 2y and 10y Treasury yields, the Baa credit spread, the dollar and oil). It generates scenarios with a VAE, a VIX-conditional VAE and an equity-conditional Wasserstein GAN. It scores them against historical simulation and Gaussian/Student-t models on 2017–2026 out of sample, then builds reverse stress scenarios ("given equities fall 15%, what else moves?") and their P&L on a treasury-style portfolio.
-**Data:** month-end S&P 500, Russell 2000 and dollar index (Yahoo Finance); 2y and 10y Treasury yields, Moody's Baa–10y spread, VIX and WTI oil (FRED), January 1990 onwards; the Federal Reserve's 2026 supervisory scenarios (federalreserve.gov).
-**Methods:** historical bootstrap; multivariate Gaussian and Student-t; VAE and conditional VAE (PyTorch); conditional WGAN-GP; energy distance and energy score (proper scoring rules), tail-quantile and tail-dependence checks, VaR exceedance tests; linear-Gaussian and nearest-neighbour analogues as conditional benchmarks.
-**Key output:** an out-of-sample scorecard by generator; how well each model captures tails and stress correlations; reverse-stress factor distributions at −8%, −15% and −20% equity moves; the Fed's 2026 severely adverse scenario against the generators; and the portfolio P&L under each.
+Stress testing needs coherent joint moves: if equities fall 15% in a month, how far do credit spreads widen, and what do yields and the dollar do? Regulators publish a handful of hand-written paths, and history never repeats exactly. Generative models promise thousands of plausible scenarios, including ones built around a chosen narrative. This notebook checks whether they deliver on a small, honest sample.
+
+**What it does.** It learns the joint monthly distribution of eight U.S. market risk factors (equities, small caps, VIX, 2y and 10y Treasury yields, the Baa credit spread, the dollar and oil).
+
+It generates scenarios with a VAE, a VIX-conditional VAE and an equity-conditional Wasserstein GAN, and scores them against historical simulation and Gaussian and Student-t models on 2017–2026 out of sample.
+
+It then builds reverse stress scenarios ("given equities fall 15%, what else moves?") and their P&L on a treasury-style portfolio.
+
+**Data.** Month-end S&P 500, Russell 2000 and dollar index (Yahoo Finance), 2y and 10y Treasury yields, the Moody's Baa–10y spread, VIX and WTI oil (FRED) from January 1990, and the Federal Reserve's 2026 supervisory scenarios (federalreserve.gov).
+
+**Methods.** Historical bootstrap, multivariate Gaussian and Student-t, a VAE and a conditional VAE (PyTorch), and a conditional WGAN-GP.
+
+They are scored with the energy distance and energy score (proper scoring rules), tail-quantile and tail-dependence checks and VaR exceedance tests, with linear-Gaussian and nearest-neighbour analogues as conditional benchmarks.
+
+**Key output.** An out-of-sample scorecard by generator, how well each model captures tails and stress correlations, reverse-stress factor distributions at −8%, −15% and −20% equity moves, the Fed's 2026 severely adverse scenario against the generators, and the portfolio P&L under each.
 
 ---
 
@@ -51,3 +62,19 @@ Stress scenarios need coherent joint moves. On eight monthly U.S. risk factors, 
 3. `bootstrap, Gaussian and Student-t generators`
 4. `VAE, conditional VAE and conditional WGAN-GP`
 5. `out-of-sample scorecard, reverse stress, dashboard and executed outputs`
+
+## References
+
+### Finance and regulation
+
+- Basel Committee on Banking Supervision. (2018). *Stress testing principles*. Bank for International Settlements. https://www.bis.org/bcbs/publ/d450.htm
+- Gneiting, T., & Raftery, A. E. (2007). Strictly proper scoring rules, prediction, and estimation. *Journal of the American Statistical Association, 102*(477), 359–378. https://doi.org/10.1198/016214506000001437
+- Longin, F., & Solnik, B. (2001). Extreme correlation of international equity markets. *The Journal of Finance, 56*(2), 649–676. https://doi.org/10.1111/0022-1082.00340
+- Székely, G. J., & Rizzo, M. L. (2013). Energy statistics: A class of statistics based on distances. *Journal of Statistical Planning and Inference, 143*(8), 1249–1272. https://doi.org/10.1016/j.jspi.2013.03.018
+
+### Machine learning and deep learning
+
+- Kingma, D. P., & Welling, M. (2014). Auto-encoding variational Bayes. In *Proceedings of the 2nd International Conference on Learning Representations*. https://arxiv.org/abs/1312.6114
+- Sohn, K., Lee, H., & Yan, X. (2015). Learning structured output representation using deep conditional generative models. *Advances in Neural Information Processing Systems, 28*. https://proceedings.neurips.cc/paper/2015/hash/8d55a249e6baa5c06772297520da2051-Abstract.html
+- Gulrajani, I., Ahmed, F., Arjovsky, M., Dumoulin, V., & Courville, A. (2017). Improved training of Wasserstein GANs. *Advances in Neural Information Processing Systems, 30*. https://arxiv.org/abs/1704.00028
+- Wiese, M., Knobloch, R., Korn, R., & Kretschmer, P. (2020). Quant GANs: Deep generation of financial time series. *Quantitative Finance, 20*(9), 1419–1440. https://doi.org/10.1080/14697688.2020.1730426
