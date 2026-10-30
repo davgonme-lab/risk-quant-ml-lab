@@ -1,0 +1,10 @@
+method,ESTR,EURIBOR6M,SOFR,average rank
+Gaussian process,5.5,5.167,5.833,5.5
+Nelson–Siegel,5.5,6.0,5.833,5.778
+Svensson,5.5,6.667,6.0,6.056
+flat forward,4.333,4.833,4.833,4.667
+linear zero,6.167,5.833,5.167,5.722
+monotone convex,3.667,3.333,4.5,3.833
+natural cubic zero,4.5,4.167,4.5,4.389
+neural network,5.167,4.833,4.833,4.944
+penalised spline,4.667,4.167,3.5,4.111
