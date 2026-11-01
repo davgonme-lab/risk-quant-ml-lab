@@ -1,0 +1,7 @@
+option,uncollateralised PFE,predicted residual PFE,Monte Carlo residual PFE,MDB max 97.5% posting
+"Two-way, TH 0, MPoR 10d",89.877106,14.689602,16.595669,100.416664
+"Two-way, TH 10",89.877106,21.814636,21.731157,90.416664
+"Two-way, TH 25",89.877106,32.688465,34.638474,75.416664
+"One-way (bank posts), TH 0",89.877106,12.613018,13.305676,0.0
+"Two-way, TH 0, MPoR 20d (disputes)",89.877106,20.26328,23.621672,98.28164
+"Two-way, TH 0 + IA 5mm",89.877106,9.206089,11.595669,100.416664
