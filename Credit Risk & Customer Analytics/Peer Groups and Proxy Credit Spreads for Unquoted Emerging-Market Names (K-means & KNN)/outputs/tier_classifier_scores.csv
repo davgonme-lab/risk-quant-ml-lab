@@ -1,0 +1,5 @@
+,balanced accuracy
+KNN classifier,0.4005877751772708
+KNN regression → tier,0.4159805220295129
+region × sector bucket → tier,0.39892794113274344
+always the most common tier,0.25

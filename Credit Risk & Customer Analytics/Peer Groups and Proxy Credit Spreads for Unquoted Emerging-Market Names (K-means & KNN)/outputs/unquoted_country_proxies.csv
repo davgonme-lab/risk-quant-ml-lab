@@ -1,0 +1,80 @@
+wb_name,region,income,proxy_bp,region median bp,nearest quoted peers,K-means peer group
+Timor-Leste,East Asia & Pacific,Lower middle income,61.4839042899818,76.05815739400796,"Azerbaijan, Guatemala, Philippines",1
+Malaysia,East Asia & Pacific,Upper middle income,66.47393242020397,76.05815739400796,"Chile, Oman, Poland",0
+Uzbekistan,Europe & Central Asia,Lower middle income,71.11349484212883,80.6809246986032,"Peru, Kazakhstan, Paraguay",2
+Viet Nam,East Asia & Pacific,Upper middle income,71.94414837483514,76.05815739400796,"Ghana, Indonesia, Azerbaijan",2
+Samoa,East Asia & Pacific,Upper middle income,73.54227864259583,76.05815739400796,"Uruguay, Bulgaria, Peru",0
+Botswana,Sub-Saharan Africa ,Upper middle income,76.67705048225503,220.68988816350912,"Azerbaijan, Dominican Republic, Brazil",0
+India,South Asia,Lower middle income,81.80061021044902,164.71016630664488,"Philippines, Indonesia, Morocco",2
+Iraq,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,85.18477896489392,251.78237514572,"Guatemala, Peru, Philippines",2
+Libya,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,86.40971710791011,251.78237514572,"Saudi Arabia, Peru, Guatemala",2
+Namibia,Sub-Saharan Africa ,Lower middle income,89.61712652519552,220.68988816350912,"Oman, Costa Rica, Hungary",0
+China,East Asia & Pacific,Upper middle income,90.99931106766765,76.05815739400796,"Brazil, Peru, Philippines",2
+Tonga,East Asia & Pacific,Upper middle income,93.60095772209004,76.05815739400796,"Uruguay, Bulgaria, Dominican Republic",0
+Nepal,South Asia,Lower middle income,98.59213145559156,164.71016630664488,"Guatemala, Peru, Brazil",2
+Vanuatu,East Asia & Pacific,Lower middle income,99.3986326156284,76.05815739400796,"Peru, Guatemala, Brazil",2
+Cambodia,East Asia & Pacific,Lower middle income,99.85478635467075,76.05815739400796,"Guatemala, Morocco, Paraguay",2
+Algeria,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,99.88015907893345,251.78237514572,"Guatemala, Peru, Brazil",2
+St. Vincent and the Grenadines,Latin America & Caribbean ,Upper middle income,105.75590264323483,129.0630858842105,"Jamaica, Dominican Republic, Bulgaria",0
+Kiribati,East Asia & Pacific,Lower middle income,106.41398145564939,76.05815739400796,"Costa Rica, Oman, Ghana",0
+St. Lucia,Latin America & Caribbean ,Upper middle income,106.7251887609054,129.0630858842105,"Dominican Republic, Oman, Bulgaria",0
+Grenada,Latin America & Caribbean ,Upper middle income,106.76899711435352,129.0630858842105,"Jamaica, Dominican Republic, Bulgaria",1
+Albania,Europe & Central Asia,Upper middle income,113.58217927171692,80.6809246986032,"Bulgaria, South Africa, Brazil",2
+Moldova,Europe & Central Asia,Upper middle income,116.23910479967901,80.6809246986032,"Serbia, South Africa, Bulgaria",2
+Cabo Verde,Sub-Saharan Africa ,Upper middle income,121.6313873047396,220.68988816350912,"Jamaica, Jordan, Paraguay",2
+Thailand,East Asia & Pacific,Upper middle income,127.39646875988258,76.05815739400796,"Brazil, South Africa, Morocco",2
+North Macedonia,Europe & Central Asia,Upper middle income,127.75740404361123,80.6809246986032,"Jamaica, Paraguay, El Salvador",2
+Dominica,Latin America & Caribbean ,Upper middle income,128.00486799037992,129.0630858842105,"Jamaica, El Salvador, Paraguay",1
+Fiji,East Asia & Pacific,Upper middle income,130.46702701814655,76.05815739400796,"Jamaica, Dominican Republic, Sri Lanka",0
+Solomon Islands,East Asia & Pacific,Lower middle income,131.03615944969033,76.05815739400796,"Guatemala, South Africa, Ghana",2
+Comoros,Sub-Saharan Africa ,Lower middle income,135.3136502325367,220.68988816350912,"Guatemala, Philippines, Kenya",2
+Bosnia and Herzegovina,Europe & Central Asia,Upper middle income,152.57495871755734,80.6809246986032,"South Africa, Colombia, Serbia",2
+Kosovo,Europe & Central Asia,Upper middle income,153.62962005351872,80.6809246986032,"Ghana, Dominican Republic, Sri Lanka",2
+Sao Tome and Principe,Sub-Saharan Africa ,Lower middle income,154.01313863406304,220.68988816350912,"Dominican Republic, Sri Lanka, Ghana",2
+Armenia,Europe & Central Asia,Upper middle income,154.78736556069788,80.6809246986032,"Sri Lanka, Paraguay, El Salvador",2
+Belize,Latin America & Caribbean ,Upper middle income,155.06696951326717,129.0630858842105,"Dominican Republic, Sri Lanka, Ghana",2
+Georgia,Europe & Central Asia,Upper middle income,157.73670436464906,80.6809246986032,"El Salvador, Sri Lanka, Paraguay",2
+Maldives,South Asia,Upper middle income,162.06713254598435,164.71016630664488,"El Salvador, Sri Lanka, Paraguay",2
+Bhutan,South Asia,Lower middle income,171.34831130808445,164.71016630664488,"Suriname, Jordan, Jamaica",1
+Montenegro,Europe & Central Asia,Upper middle income,173.96937059024341,80.6809246986032,"Suriname, Jordan, Jamaica",1
+Kyrgyz Republic,Europe & Central Asia,Lower middle income,189.13944026905597,80.6809246986032,"Benin, Paraguay, Angola",2
+"Gambia, The",Sub-Saharan Africa ,Low income,192.9936294302345,220.68988816350912,"Benin, Cote D'Ivoire (Ivory Coast), Sri Lanka",2
+Afghanistan,"Middle East, North Africa, Afghanistan & Pakistan",Low income,199.22735945142523,251.78237514572,"Nigeria, Guatemala, Pakistan",2
+Tunisia,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,213.19929612672837,251.78237514572,"Angola, El Salvador, Paraguay",2
+Rwanda,Sub-Saharan Africa ,Low income,217.98103067203544,220.68988816350912,"Benin, Jordan, El Salvador",1
+Tanzania,Sub-Saharan Africa ,Lower middle income,231.26571426237464,220.68988816350912,"Cote D'Ivoire (Ivory Coast), Egypt, Benin",2
+Bangladesh,South Asia,Lower middle income,231.2912156571326,164.71016630664488,"Kenya, Egypt, Philippines",2
+Liberia,Sub-Saharan Africa ,Low income,232.31307983313238,220.68988816350912,"Cote D'Ivoire (Ivory Coast), Benin, Egypt",2
+Lesotho,Sub-Saharan Africa ,Lower middle income,246.40085233758313,220.68988816350912,"Benin, Angola, Cote D'Ivoire (Ivory Coast)",2
+Haiti,Latin America & Caribbean ,Lower middle income,256.37086957728275,129.0630858842105,"Guatemala, Pakistan, Bolivia",2
+Malawi,Sub-Saharan Africa ,Low income,256.6290396948164,220.68988816350912,"Ghana, Egypt, Kenya",2
+Guinea-Bissau,Sub-Saharan Africa ,Low income,267.87728088963775,220.68988816350912,"Angola, Benin, Nigeria",2
+Djibouti,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,272.61048852008486,251.78237514572,"El Salvador, Angola, Benin",2
+Papua New Guinea,East Asia & Pacific,Lower middle income,273.4037431485075,76.05815739400796,"Cote D'Ivoire (Ivory Coast), Egypt, Kenya",2
+Togo,Sub-Saharan Africa ,Lower middle income,278.6897883740577,220.68988816350912,"Cote D'Ivoire (Ivory Coast), Kenya, Egypt",2
+Mauritania,Sub-Saharan Africa ,Lower middle income,279.3728314242276,220.68988816350912,"Cote D'Ivoire (Ivory Coast), Egypt, Kenya",2
+Nicaragua,Latin America & Caribbean ,Lower middle income,279.8546836595856,129.0630858842105,"Angola, Ukraine, Paraguay",2
+Tajikistan,Europe & Central Asia,Lower middle income,280.07730070513963,80.6809246986032,"Cote D'Ivoire (Ivory Coast), Egypt, Kenya",2
+Sierra Leone,Sub-Saharan Africa ,Low income,285.05319749027416,220.68988816350912,"Kenya, Egypt, Cote D'Ivoire (Ivory Coast)",2
+Madagascar,Sub-Saharan Africa ,Low income,285.09363828278515,220.68988816350912,"Kenya, Egypt, Cote D'Ivoire (Ivory Coast)",2
+Uganda,Sub-Saharan Africa ,Low income,286.6202883974038,220.68988816350912,"Kenya, Egypt, Cote D'Ivoire (Ivory Coast)",2
+Sudan,Sub-Saharan Africa ,Low income,286.9712133847355,220.68988816350912,"Nigeria, Pakistan, Egypt",2
+Burundi,Sub-Saharan Africa ,Low income,291.4524367880675,220.68988816350912,"Pakistan, Nigeria, Egypt",2
+Honduras,Latin America & Caribbean ,Lower middle income,292.8065541651178,129.0630858842105,"Egypt, Cote D'Ivoire (Ivory Coast), Ecuador",2
+West Bank and Gaza,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,294.27774829545746,251.78237514572,"Pakistan, Nigeria, Egypt",2
+Burkina Faso,Sub-Saharan Africa ,Low income,303.62824144108964,220.68988816350912,"Pakistan, Nigeria, Kenya",2
+Belarus,Europe & Central Asia,Upper middle income,305.08548963889257,80.6809246986032,"Mexico, Ecuador, Bolivia",2
+Myanmar,East Asia & Pacific,Lower middle income,310.69372804848626,76.05815739400796,"Pakistan, Kenya, Nigeria",2
+Mali,Sub-Saharan Africa ,Low income,310.79494456866666,220.68988816350912,"Pakistan, Nigeria, Kenya",2
+Niger,Sub-Saharan Africa ,Low income,315.70664391926067,220.68988816350912,"Pakistan, Kenya, Nigeria",2
+Lao PDR,East Asia & Pacific,Lower middle income,327.62803006860673,76.05815739400796,"Ukraine, Suriname, El Salvador",2
+Cameroon,Sub-Saharan Africa ,Lower middle income,341.2549114139194,220.68988816350912,"Pakistan, Kenya, Egypt",2
+Ethiopia,Sub-Saharan Africa ,Low income,342.7399175338392,220.68988816350912,"Pakistan, Kenya, Egypt",2
+Guinea,Sub-Saharan Africa ,Lower middle income,343.24169661733123,220.68988816350912,"Kenya, Egypt, Pakistan",2
+"Congo, Rep.",Sub-Saharan Africa ,Lower middle income,360.22600239392085,220.68988816350912,"Bolivia, Ecuador, Cote D'Ivoire (Ivory Coast)",2
+Mauritius,Sub-Saharan Africa ,Upper middle income,373.6515340715577,220.68988816350912,"Suriname, Jordan, Senegal",0
+Zimbabwe,Sub-Saharan Africa ,Lower middle income,388.08146007094086,220.68988816350912,"Bolivia, Egypt, Pakistan",2
+Eswatini,Sub-Saharan Africa ,Lower middle income,404.255076815952,220.68988816350912,"Bolivia, Egypt, Kenya",2
+Zambia,Sub-Saharan Africa ,Lower middle income,541.2024550900961,220.68988816350912,"Ukraine, Suriname, Senegal",2
+Mongolia,East Asia & Pacific,Upper middle income,616.506873207141,76.05815739400796,"Senegal, Suriname, Ukraine",1
+Mozambique,Sub-Saharan Africa ,Low income,1240.8333842617817,220.68988816350912,"Lebanon, Senegal, Suriname",4

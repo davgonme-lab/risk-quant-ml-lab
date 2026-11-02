@@ -1,0 +1,4 @@
+,KNN proxy,region × sector bucket
+median abs CVA error per counterparty ($),13291.56048961493,14342.672066758421
+mean abs CVA error per counterparty ($),25967.700508736114,27759.294498489202
+portfolio CVA bias (share),-0.07010403297781367,-0.1882338096425196
