@@ -1,0 +1,88 @@
+issuer,country,issuer_icov,similarity,rule
+"ABANCA CORPORACIÓN BANCARIA, SA.",Spain,ABANCA CORPORACION BANCARIA SA,1.0,similarity
+ABN AMRO Covered Bond Company B.V.,Netherlands,ABN AMRO BANK NV,1.0,similarity
+AXA Bank Europe SCF,France,AXA BANK EUROPE SCF,1.0,similarity
+Achmea Bank N.V.,Netherlands,ACHMEA BANK NV,1.0,similarity
+Argenta Spaarbank SA/NV,Belgium,ARGENTA SPAARBANK NV,1.0,similarity
+"BANCO SANTANDER, S.A",Spain,BANCO SANTANDER SA,0.818,first word
+BANKINTER,Spain,BANKINTER SA,1.0,similarity
+BAWAG P.S.K.,Austria,BAWAG PSK BANK FUER ARBEIT UND WIR,0.45,first word
+BNP Paribas Fortis SA/NV,Belgium,BNP PARIBAS FORTIS SA/NV,1.0,similarity
+BNP Paribas Home Loan SFH,France,BNP PARIBAS HOME LOAN SFH SA,1.0,similarity
+Banca Monte dei Paschi di Siena,Italy,BANCA MONTE DEI PASCHI DI SIENA SP,0.936,similarity
+"Banco BPI, S.A.",Portugal,BANCO BPI SA,0.6,first word
+Banco BPM S.p.A.,Italy,BANCO BPM SPA,1.0,similarity
+"Banco Santander Totta, S.A.",Portugal,BANCO SANTANDER TOTTA SA,0.882,similarity
+Banco de Sabadell,Spain,BANCO DE SABADELL SA,1.0,similarity
+Banco di Desio e della Brianza,Italy,BANCO DI DESIO E DELLA BRIANZA SPA,1.0,similarity
+Banco di Desio e della Brianza S.p.A.,Italy,BANCO DI DESIO E DELLA BRIANZA SPA,1.0,similarity
+Bausparkasse Schwäbisch Hall AG,Germany,BAUSPARKASSE SCHWAEBISCH HALL BAUS,0.903,similarity
+Bayerische Landesbank,Germany,BAYERISCHE LANDESBANK,1.0,similarity
+Belfius Bank NV/SA,Belgium,BELFIUS BANQUE SA,1.0,similarity
+CAIXABANK,Spain,CAIXABANK SA,1.0,similarity
+"CAJAMAR CAJA RURAL, S.C.C.",Spain,CAJAMAR CAJA RURAL SOCIEDAD COOPER,0.667,first word
+CRELAN HOME LOAN SCF,France,CRELAN HOME LOAN SCF SA,1.0,similarity
+CRÉDIT AGRICOLE ITALIA SPA,Italy,CREDIT AGRICOLE ITALIA SPA,1.0,similarity
+"Caja Rural de Navarra, Sociedad Cooperativa de Crédito",Spain,CAJA RURAL DE NAVARRA S COOP DE CR,0.737,first word
+Clydesdale Bank PLC (trading as Virgin Money),United Kingdom,CLYDESDALE BANK PLC,0.488,first word
+Commerzbank AG,Germany,COMMERZBANK AG,1.0,similarity
+Coventry Building Society,United Kingdom,COVENTRY BUILDING SOCIETY,1.0,similarity
+Coöperatieve Rabobank U.A.,Netherlands,COOPERATIEVE RABOBANK UA,0.98,similarity
+Credito Emiliano SpA,Italy,CREDITO EMILIANO SPA,1.0,similarity
+Crédit Agricole Financement de l'Habitat SFH,France,CREDIT AGRICOLE HOME LOAN SFH,0.421,first word
+Crédit Agricole Home Loan SFH,France,CREDIT AGRICOLE HOME LOAN SFH,1.0,similarity
+Crédit Agricole Italia SpA,Italy,CREDIT AGRICOLE ITALIA SPA,1.0,similarity
+Crédit Mutuel Home Loan SFH,France,CREDIT MUTUEL HOME LOAN SFH SA,1.0,similarity
+DNB Boligkreditt AS,Norway,DNB BOLIGKREDITT AS,1.0,similarity
+DZ HYP AG,Germany,DZ HYP AG,1.0,similarity
+Danske Mortgage Bank,Finland,DANSKE KIINNITYSLUOTTOPANKKI OY,0.324,first word
+Danske Mortgage Bank Plc,Finland,DANSKE KIINNITYSLUOTTOPANKKI OY,0.324,first word
+Deutsche Pfandbriefbank AG,Germany,DEUTSCHE PFANDBRIEFBANK AG,1.0,similarity
+EUROCAJA RURAL SCC,Spain,EUROCAJA RURAL S. COOP DE CREDITO,0.889,similarity
+Eika Boligkreditt AS,Norway,EIKA BOLIGKREDITT AS,1.0,similarity
+Equitable Bank,Canada,EQUITABLE BANK,1.0,similarity
+Erste Group Bank AG,Austria,ERSTE GROUP BANK AG,1.0,similarity
+HSBC UK Bank plc,United Kingdom,HSBC UK BANK PLC,1.0,similarity
+Hamburg Commercial Bank AG,Germany,HAMBURG COMMERCIAL BANK AG,1.0,similarity
+Hamburger Sparkasse AG,Germany,HAMBURGER SPARKASSE AG,1.0,similarity
+ING Bank N.V.,Netherlands,ING BANK NV,1.0,similarity
+Iccrea Banca S.p.A.,Italy,ICCREA BANCA ISTITUTO CENTRALE DEL,0.353,first word
+Iccrea Banca Spa,Italy,ICCREA BANCA ISTITUTO CENTRALE DEL,0.353,first word
+Intesa Sanpaolo S.p.A.,Italy,INTESA SANPAOLO SPA,1.0,similarity
+KEB Hana Bank,Republic of Korea (South),KEB HANA BANK,1.0,similarity
+Komerční banka a.s.,Czech Republic,KOMERCNI BANKA AS,0.875,similarity
+Kutxabank S.A,Spain,KUTXABANK SA,0.818,first word
+Landesbank Baden-Württemberg,Germany,LANDESBANK BADEN-WUERTTEMBERG,0.982,similarity
+Länsförsäkringar Hypotek AB,Sweden,LANSFORSAKRINGAR HYPOTEK AB (PUBL),1.0,similarity
+MBH Mortgage Bank Co. Plc.,Hungary,MBH JELZALOGBANK NYRT,0.25,first word
+Mediobanca - Banca di Credito Finanziario S.p.A.,Italy,MEDIOBANCA BANCA DI CREDITO FINANZ,0.872,similarity
+NIBC Bank N.V.,Netherlands,NIBC BANK NV,1.0,similarity
+Nationale-Nederlanden Bank N.V.,Netherlands,NATIONALE NEDERLANDEN BANK N V,1.0,similarity
+Nationwide Building Society,United Kingdom,NATIONWIDE BUILDING SOCIETY,1.0,similarity
+Nordea Mortgage Bank,Finland,NORDEA MORTGAGE BANK PLC,1.0,similarity
+"Novo Banco, SA",Portugal,NOVO BANCO SA,1.0,similarity
+OTP Mortgage Bank Ltd.,Hungary,OTP JELZALOGBANK ZRT,0.261,first word
+PKO Bank Hipoteczny S.A.,Poland,PKO BANK HIPOTECZNY SA,0.875,similarity
+"Prima banka Slovensko, a.s.",Slovakia,PRIMA BANKA SLOVENSKO AS,0.913,similarity
+SR-Boligkreditt,Norway,SR BOLIGKREDITT AS,1.0,similarity
+SR-Boligkreditt AS,Norway,SR BOLIGKREDITT AS,1.0,similarity
+Santander UK plc,United Kingdom,SANTANDER UK PLC,1.0,similarity
+Shinhan Bank,Republic of Korea (South),SHINHAN BANK,1.0,similarity
+Skipton Building Society,United Kingdom,SKIPTON BUILDING SOCIETY,1.0,similarity
+Société Générale SFH,France,SOCIETE GENERALE SFH,1.0,similarity
+SpareBank 1 Boligkreditt AS,Norway,SPAREBANK 1 BOLIGKREDITT AS,1.0,similarity
+Sparebanken Norge Boligkreditt,Norway,SPAREBANKEN NORGE BOLIGKREDITT AS,1.0,similarity
+Sparebanken Vest Boligkreditt,Norway,SPAREBANKEN VEST BOLIGKREDITT AS,1.0,similarity
+Standard Chartered Bank (Singapore) Limited,Singapore,STANDARD CHARTERED BANK (SINGAPORE,1.0,similarity
+TSB Bank PLC,United Kingdom,TSB BANK PLC,1.0,similarity
+"Tatra banka, a.s.",Slovakia,TATRA BANKA AS,0.846,first word
+The Bank of Nova Scotia,Canada,BANK OF NOVA SCOTIA,1.0,similarity
+The Swedish Covered Bond Corporation,Sweden,SWEDISH COVERED BOND CORP,1.0,similarity
+The Toronto-Dominion Bank,Canada,TORONTO-DOMINION BANK/THE,1.0,similarity
+UniCredit Bank Austria AG,Austria,UNICREDIT BANK AUSTRIA AG,1.0,similarity
+UniCredit Bank GmbH,Germany,UNICREDIT BANK GMBH,1.0,similarity
+UniCredit SpA,Italy,UNICREDIT SPA,1.0,similarity
+Van Lanschot Kempen N.V.,Netherlands,VAN LANSCHOT KEMPEN NV,1.0,similarity
+"Všeobecná úverová banka, a.s.",Slovakia,VSEOBECNA UVEROVA BANKA AS,0.92,similarity
+Yorkshire Building Society,United Kingdom,YORKSHIRE BUILDING SOCIETY,1.0,similarity
+"Česká spořitelna, a.s.",Czech Republic,CESKA SPORITELNA AS,0.889,similarity

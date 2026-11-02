@@ -1,0 +1,6 @@
+,Spearman vs spread,exact tier %,within one tier %
+country only,0.5429251165280112,32.97872340425532,77.12765957446808
+ordinal logit (scorecard pillars),0.4493571628846092,25.53191489361702,63.56382978723404
+LightGBM (HTT metrics),0.657142175065081,34.04255319148936,81.38297872340425
+scorecard alone (higher score = tighter),-0.08705114700474718,,
+chance (5 tiers),0.0,20.0,52.0
