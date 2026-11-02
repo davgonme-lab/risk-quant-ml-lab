@@ -1,0 +1,4 @@
+,Poisson deviance (test),correlation with actual
+constant,908.0830484459028,
+Poisson GLM,501.20361121356666,0.5921044225489366
+LightGBM-Poisson,644.3178630104431,0.497042319233981
