@@ -1,0 +1,59 @@
+country,LLM risk score,label,note
+France,0.583466112613678,negative,"Main Credit Strengths:
+
+France's strong economic fundamentals support its sovereign creditworthiness. With real GDP growth at 0.8%, moderate inflation at 0.9%, and a resilient current account deficit (-0.3% of GDP), France maintains a relatively stable economic environment that supports its ability to service its debt.
+
+Main Weaknesses:
+
+Despite these strengths, France faces significant challenges. The country is grappling with high levels of public debt (116% of GDP) and a persistent trade deficit. Additionally, ongoing social unrest, particularly"
+Greece,0.4546377956867218,stable,"Main Credit Strengths:
+
+Greece's high-quality sovereign bonds have attracted significant investor interest due to their low default risk. The country has maintained its AAA rating from major international agencies despite economic challenges.
+
+Main Weaknesses:
+
+The Greek economy is heavily reliant on tourism and exports, which can be volatile. Additionally, the country faces ongoing issues with public finances, including high levels of debt and deficits, which could strain resources in the coming years.
+
+Outlook for Next 12 Months:
+
+While Greece continues to face financial pressures, recent positive developments such as"
+Mexico,0.30814799666404724,stable,"Main Credit Strengths:
+
+Mexico's government has managed to maintain fiscal discipline with a real GDP growth rate of 0.6%, which is relatively stable compared to other Latin American countries. Additionally, the country has robust reserves that can support its economy during times of economic uncertainty.
+
+Main Weaknesses:
+
+Despite its strong fiscal position, Mexico faces challenges such as high levels of public debt (62% of GDP), which puts pressure on future financing costs. The recent political unrest, including strikes by striking teachers threatening the World Cup, highlights ongoing social tensions"
+South Africa,0.27961716055870056,stable,"**Main Credit Strengths:**
+South Africa's robust infrastructure, including its ports and rail network, supports significant economic activity. Additionally, the country has a diversified economy with substantial agricultural production, contributing to food security and export earnings.
+
+**Main Weaknesses:**
+The high level of public debt (78% of GDP) poses a risk to financial stability, as it may strain fiscal resources and limit future investment in key sectors like education and healthcare. The persistent trade deficit (-0.4% of GDP) indicates that South Africa relies heavily on"
+Italy,0.20752888917922974,stable,"Main Credit Strengths:
+Italy's government has managed its fiscal deficit effectively despite high public debt levels, maintaining a primary surplus since 2019. The country also boasts robust economic fundamentals with steady real GDP growth and low inflation.
+
+Main Weaknesses:
+The country faces significant challenges including high public debt (137% of GDP), persistent budget deficits (-3.1% of GDP), and limited foreign exchange reserves (only 5.7 months' worth of imports). These factors raise concerns about the sustainability of Italy's long-term fiscal"
+United Kingdom,0.19788670539855957,stable,"Main Credit Strengths:
+
+The United Kingdom's government has managed its fiscal deficit effectively despite economic challenges, maintaining a relatively low public debt-to-GDP ratio at 102%. The country also boasts robust reserves that can support its financial position.
+
+Main Weaknesses:
+
+While the UK is facing significant economic pressures, including high inflation and a shrinking population, the government's ability to manage these issues remains a concern. Additionally, the country's reliance on imported energy sources poses risks during times of geopolitical tensions or supply chain disruptions.
+
+Outlook for Next"
+Netherlands,0.10737748444080353,stable,"Main Credit Strengths:
+
+The Netherlands has a solid fiscal position with a low deficit (-1.6% of GDP) and a relatively stable economy driven by strong real GDP growth (1.8%). The country's high reserves (1.0 months of imports) also indicate financial strength.
+
+Main Weaknesses:
+
+While the Netherlands' fiscal situation is manageable, its reliance on tourism and agriculture can be vulnerable to external shocks such as natural disasters or global economic downturns. Additionally, the recent political instability could affect long-term stability and policy consistency.
+
+Out"
+Chile,0.1066238284111023,stable,"**Main Credit Strengths:**
+Chile's government has maintained fiscal discipline with a real GDP growth rate of 2.5%, which is above its long-term average. The country also boasts strong reserves at 4.2 months of imports, indicating robust financial health.
+
+**Main Weaknesses:**
+Despite these strengths, Chile faces challenges such as high public debt levels at 42% of GDP, which could strain future financing options if interest rates rise. Additionally, the recent political developments involving José Antonio Kast, who supports former dictator"

@@ -1,0 +1,22 @@
+score,sample,AUC,rank corr with spread change,n
+LLM (numbers + news),all,0.5404487179487181,0.03204090455563999,206
+LLM (numbers + news),euro area (spread over Bund),0.6261574074074074,0.06968090772161128,84
+LLM (numbers + news),others (spread over UST),0.5300751879699249,0.01639769536141402,122
+LLM (numbers only),all,0.488525641025641,-0.0755810162763234,206
+LLM (numbers only),euro area (spread over Bund),0.6938657407407407,-0.05503128751777766,84
+LLM (numbers only),others (spread over UST),0.46976817042606517,-0.09447991449259167,122
+logistic regression,all,0.45666666666666667,-0.14080998809143855,206
+logistic regression,euro area (spread over Bund),0.41666666666666663,0.0076136478687860686,84
+logistic regression,others (spread over UST),0.2901002506265664,-0.20442401551775982,122
+LightGBM,all,0.3796794871794872,-0.28686062649378663,206
+LightGBM,euro area (spread over Bund),0.4375,-0.26324928242355344,84
+LightGBM,others (spread over UST),0.2918233082706767,-0.30129816056785463,122
+LightGBM + news tone and count,all,0.38769230769230767,-0.2929471802105104,206
+LightGBM + news tone and count,euro area (spread over Bund),0.42245370370370366,-0.25777057811076237,84
+LightGBM + news tone and count,others (spread over UST),0.32393483709273185,-0.29549502513044373,122
+debt-deficit-momentum rule,all,0.47692307692307695,-0.005396946329108711,206
+debt-deficit-momentum rule,euro area (spread over Bund),0.7268518518518519,0.19311531841652324,84
+debt-deficit-momentum rule,others (spread over UST),0.42199248120300753,-0.08605152980130261,122
+LLM + logistic,all,0.46538461538461534,-0.14876641717029243,206
+LLM + logistic,euro area (spread over Bund),0.568287037037037,0.010023286423002936,84
+LLM + logistic,others (spread over UST),0.3468045112781955,-0.1869500133830765,122
