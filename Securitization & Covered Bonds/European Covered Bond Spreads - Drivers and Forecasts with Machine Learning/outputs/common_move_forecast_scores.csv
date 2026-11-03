@@ -1,0 +1,3 @@
+,RMSE bp,out-of-sample R² vs RW
+random walk,11.243327752698299,0.0
+ridge on market state,13.483462983368973,-0.4381796941104399
