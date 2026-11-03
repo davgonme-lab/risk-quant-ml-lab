@@ -1,0 +1,6 @@
+cluster,trades,median_dMtM_bp_notional,median_dMtM_in_dv01,median_dPFE_rel,top_segment,dominant_defect,purity_pct
+0,89,30.35866047687135,7.719429953116747,0.0,Bank C · Client swaps,day-count book,79.7752808988764
+1,105,-32.72813181310612,-7.12629478194867,-0.07100302,Bank D · Client swaps,day-count book,77.14285714285715
+2,123,0.0,0.0,0.22883062,Bank G · ALM hedges,wrong vol,98.3739837398374
+3,32,-264.4857573119399,-45.07666295988251,-0.06871146,Bank H · ALM hedges,missing fixing,62.5
+4,24,262.57453611820085,44.75813735218374,0.043555394,Bank B · ALM hedges,missing fixing,62.5
