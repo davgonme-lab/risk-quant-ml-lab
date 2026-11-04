@@ -1,0 +1,6 @@
+,spread used (bp),implied rating,S&P rating,"gap (notches, + = market worse)"
+bond-implied (5y z-spread),247.33883506705345,BB-,BBB-,3
+"CDS-implied (estimated 5y CDS, zero basis)",251.89399293504314,B+,BBB-,4
+CDS-implied (with July-print basis),215.0,BB-,BBB-,3
+"equity-implied (CreditGrades, textbook)",219.23277309940315,BB-,BBB-,3
+"equity-implied (CreditGrades, calibrated)",134.12584951032463,BBB-,BBB-,0

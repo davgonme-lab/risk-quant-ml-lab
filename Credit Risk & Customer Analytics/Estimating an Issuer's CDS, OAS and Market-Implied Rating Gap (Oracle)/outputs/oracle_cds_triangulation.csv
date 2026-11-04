@@ -1,0 +1,11 @@
+,value
+Oracle 5y z-spread / OAS over Treasuries (bp),247.33883506705345
+bond-implied 5y CDS (bp),251.89399293504314
+"equity-implied 5y CDS, CreditGrades calibrated (bp)",134.12584951032463
+"equity-implied 5y CDS, textbook parameters (bp)",219.23277309940315
+"ML fair z-spread, 4–6y bonds (bp)",98.93329427795823
+"linear fair z-spread, 4–6y bonds (bp)",105.82126678789889
+"observed z-spread, 4–6y bonds (bp)",247.38086929400254
+"public 5y CDS print, 27-Jul-2026 (bp)",215.0
+basis: print − bond-implied 5y (bp),-36.893992935043144
+basis: bond-implied 5y CDS − 5y z-spread (bp),4.555157867989692
