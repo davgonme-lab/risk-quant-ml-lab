@@ -1,0 +1,8 @@
+,at-the-money vols,skew-adjusted vols (65% strike)
+fair coupon (% p.a.),24.675535124950457,28.911301092076496
+PV of capital (per 100),74.3697280883789,71.78385162353516
+PV of 1% quarterly coupon,3.8305587768554688,3.6271142959594727
+P(autocall),0.332235,0.32153
+P(loss at maturity),0.371795,0.41428
+expected loss if hit (% of notional),54.53596115112305,55.665184020996094
+expected life (years),1.57717,1.58931875

@@ -1,0 +1,10 @@
+,value
+epochs trained,85.0
+"training label noise (s.d., points)",0.49713839571319896
+test RMSE (points),0.5650976797195983
+test MAE (points),0.4081646854365952
+test max error (points),2.400250104498326
+test labels: s.d. of price (points),12.417947336570288
+MC time per price at 131k paths (s),0.061678793430328366
+surrogate time per price (ms),0.0030363798141479492
+speed-up,20313.26685249892

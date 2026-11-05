@@ -1,0 +1,8 @@
+,value
+scenarios,1250.0
+10-day 99% VaR ($),1939853.9801794353
+10-day 97.5% ES ($),2185163.944719706
+surrogate vs MC on checked scenarios: MAE ($),27524.012696038564
+correlation surrogate vs MC P&L,0.9995191411782038
+vol multiplier in the worst scenario,1.5624086840441564
+worst-of 10-day move in the worst scenario (%),-22.940790611251284
