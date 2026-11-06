@@ -1,0 +1,6 @@
+,0
+pooled long-run deposit beta (12 months),0.7780811743894321
+share passed through within 3 months,0.5624833376280742
+share passed through within 6 months,0.9272450509594403
+train bank-months,1574.0
+test bank-months,950.0

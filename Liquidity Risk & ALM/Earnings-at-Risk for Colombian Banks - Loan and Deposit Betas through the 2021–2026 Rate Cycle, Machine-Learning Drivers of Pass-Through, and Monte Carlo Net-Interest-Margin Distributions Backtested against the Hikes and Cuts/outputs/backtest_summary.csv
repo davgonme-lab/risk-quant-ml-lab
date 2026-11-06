@@ -1,0 +1,3 @@
+origin,banks,policy proxy at origin (%),realised 12m later (%),forecast 90% range (%),realised NIM inside 5–95% range,direction of NIM change right,MAE of expected NIM (pp),MAE of no-change NIM (pp),MAE given the realised rate path (pp),direction right given realised rates,inside rate-only range,median forecast range width (pp)
+2021-12,25,2.642576691634968,10.816960428167377,1.5–4.4,0.52,0.56,0.8436080091575744,0.8843818540924694,0.834295710164637,0.6,0.04,1.1852438324974996
+2023-12,26,12.491522459558979,9.33999461270556,11.2–18.2,0.7692307692307693,0.3076923076923077,0.7935669318071695,0.7469850962537279,0.7132325861865462,0.6538461538461539,0.19230769230769232,1.890938952409103
