@@ -1,0 +1,4 @@
+asset,GARCH,LSTM,EWMA,SV
+EUR/USD,11,4,0,0
+S&P 500 (SPY),4,8,2,1
+WTI crude,8,2,2,3
