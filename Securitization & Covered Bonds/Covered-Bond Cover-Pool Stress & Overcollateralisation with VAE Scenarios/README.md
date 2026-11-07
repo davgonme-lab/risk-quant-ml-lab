@@ -47,7 +47,7 @@ Covered-bond investors rely on the cover pool after an issuer default. With a de
 - `generator_comparison.csv`
 - `oc_drivers.csv`
 - `oc_results.csv`
-- `vae_macro_scenarios.pt`
+- `vae_macro_scenarios.pt` (trained VAE weights; created locally when the notebook runs and not stored in the repository)
 
 ## Key assumptions
 
