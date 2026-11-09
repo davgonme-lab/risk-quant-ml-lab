@@ -1,0 +1,7 @@
+,,rate-spread gap (bp),t-stat
++ underwriting controls,Black (non-Hispanic),-1.3328198248790508,-1.7267835134710579
++ underwriting controls,Hispanic,38.84969353788467,31.009977455884332
++ underwriting controls,Asian (non-Hispanic),-7.217107635725354,-10.094786064600015
++ lender fixed effects,Black (non-Hispanic),4.636163050777082,6.664522731838263
++ lender fixed effects,Hispanic,9.588747457316073,11.19201761910117
++ lender fixed effects,Asian (non-Hispanic),-2.769745133445605,-4.534489577732104
