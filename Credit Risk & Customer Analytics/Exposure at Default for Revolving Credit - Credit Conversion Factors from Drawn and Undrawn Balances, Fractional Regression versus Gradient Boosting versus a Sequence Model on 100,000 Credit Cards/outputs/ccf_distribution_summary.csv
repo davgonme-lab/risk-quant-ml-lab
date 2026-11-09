@@ -1,0 +1,13 @@
+,0
+cards with an event,377.0
+with a usable 12-month reference date,100.0
+CCF < 0,0.37
+CCF = 0 to 0.05,0.05
+CCF 0.95 to 1,0.0
+CCF > 1,0.42
+mean CCF,0.19973485003663888
+"mean CCF floored at 0, capped at 1",0.5154164375902934
+median CCF,0.6679074004947602
+limit changed by default,0.02
+portfolio EAD / balance at reference,1.468241918792252
+portfolio realised CCF (Σ EAD − B) / Σ U,0.5960826065124482

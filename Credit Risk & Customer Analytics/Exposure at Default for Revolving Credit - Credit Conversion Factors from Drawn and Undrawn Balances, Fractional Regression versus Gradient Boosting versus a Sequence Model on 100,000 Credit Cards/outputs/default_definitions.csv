@@ -1,0 +1,5 @@
+,cards,median balance at event,median balance / limit
+technical: any 90+ days past due,1787.0,205.11,0.0017071428571428572
+material: 90+ days past due on a non-trivial amount,27.0,111186.045,1.0744845
+material: 60+ days,96.0,102256.4025,1.0580999166666667
+material: 30+ days (used here),377.0,102516.795,1.03278175
