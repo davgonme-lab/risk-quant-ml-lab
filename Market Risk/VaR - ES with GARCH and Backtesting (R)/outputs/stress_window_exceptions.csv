@@ -1,0 +1,19 @@
+window,model,days,exceptions,loss / VaR on exception days
+COVID crash (Feb–Apr 2020),Historical simulation,52,9,2.643397534227823
+COVID crash (Feb–Apr 2020),RiskMetrics EWMA,52,6,1.7906751978451756
+COVID crash (Feb–Apr 2020),GARCH normal,52,6,1.5561900038645597
+COVID crash (Feb–Apr 2020),GARCH Student-t,52,6,1.540945635315664
+COVID crash (Feb–Apr 2020),GJR-GARCH skew-t,52,5,1.4975865561491604
+COVID crash (Feb–Apr 2020),Filtered HS,52,6,1.4287397524241237
+2022 rate shock,Historical simulation,251,5,1.2848639715273305
+2022 rate shock,RiskMetrics EWMA,251,8,1.160482676088307
+2022 rate shock,GARCH normal,251,9,1.1751648805222068
+2022 rate shock,GARCH Student-t,251,5,1.160285549427139
+2022 rate shock,GJR-GARCH skew-t,251,3,1.0361794283498647
+2022 rate shock,Filtered HS,251,0,NA
+Last 12 months,Historical simulation,252,2,1.155964088171705
+Last 12 months,RiskMetrics EWMA,252,6,1.2078692534443607
+Last 12 months,GARCH normal,252,4,1.268138164971506
+Last 12 months,GARCH Student-t,252,4,1.171636285547824
+Last 12 months,GJR-GARCH skew-t,252,2,1.232967718148621
+Last 12 months,Filtered HS,252,2,1.2271359664645891
