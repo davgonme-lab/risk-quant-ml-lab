@@ -1,0 +1,9 @@
+,0
+long-run PD,0.01873413262827765
+long-run LGD,0.45954375504581957
+99.9% default rate (Basel ρ = 15%),0.16888085470109337
+Frye–Jacobs LGD at 99.9%,0.588042499079614
+Frye–Jacobs LGD at worst observed default rate,0.4788437434772341
+observed LGD of downturn-year defaults,0.48219199967554566
+correlation of annual LGD with default rate,0.7477656843286515
+RMSE of Frye–Jacobs vs annual LGD,0.07236493163952602
