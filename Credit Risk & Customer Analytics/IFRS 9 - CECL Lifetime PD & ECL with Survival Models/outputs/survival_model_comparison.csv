@@ -1,0 +1,4 @@
+,C-index (test),training loans
+Cox PH,0.8088827148586086,344465
+Random survival forest,0.8036215750272717,30000
+DeepSurv,0.8207393762517151,344465
