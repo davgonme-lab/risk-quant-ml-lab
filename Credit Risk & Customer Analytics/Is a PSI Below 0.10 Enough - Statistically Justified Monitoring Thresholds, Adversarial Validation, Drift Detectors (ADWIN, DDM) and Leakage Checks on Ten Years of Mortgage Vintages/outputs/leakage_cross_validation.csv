@@ -1,0 +1,5 @@
+,0
+"scorecard, random 5-fold CV",0.7925109590969441
+"scorecard + leaky fields, random 5-fold CV",0.896384191156641
+"scorecard on 2018–2021, random 5-fold CV",0.7518336520974386
+"scorecard trained 2018–2020, tested 2021–2023",0.7838559233506049

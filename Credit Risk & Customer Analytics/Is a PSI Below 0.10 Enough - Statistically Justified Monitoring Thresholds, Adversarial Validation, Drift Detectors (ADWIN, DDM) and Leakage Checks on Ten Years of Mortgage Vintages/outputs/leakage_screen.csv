@@ -1,0 +1,9 @@
+,univariate AUC,known at origination
+ever_modified,0.7899966363366399,False
+fico,0.7361644270623968,True
+sato,0.665429073908501,True
+months_reported,0.6399464934143786,False
+dti,0.5944974550539064,True
+cltv,0.5808056602261384,True
+mi_pct,0.5735856410711766,True
+log_upb,0.5433814953226536,True

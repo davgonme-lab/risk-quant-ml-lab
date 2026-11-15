@@ -1,0 +1,7 @@
+book,detector,alarms,first alarm,alarms by year
+Fannie Mae,ADWIN on score (at origination),3,2006-12,"2006: 1, 2008: 2"
+Fannie Mae,DDM on defaults (18 months later),4,2008-06,"2008: 1, 2009: 3"
+Fannie Mae,ADWIN on calibration residual (18 months later),4,2008-01,"2008: 1, 2009: 2, 2010: 1"
+Freddie Mac,ADWIN on score (at origination),9,2019-08,"2019: 2, 2020: 1, 2021: 1, 2022: 2, 2023: 2, 2024: 1"
+Freddie Mac,DDM on defaults (18 months later),3,2020-12,"2020: 1, 2021: 1, 2024: 1"
+Freddie Mac,ADWIN on calibration residual (18 months later),3,2021-05,"2021: 1, 2022: 1, 2023: 1"
