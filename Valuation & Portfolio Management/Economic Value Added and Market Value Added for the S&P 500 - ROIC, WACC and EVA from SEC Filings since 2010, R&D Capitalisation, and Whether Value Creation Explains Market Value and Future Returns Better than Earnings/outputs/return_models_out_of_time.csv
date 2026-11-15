@@ -1,0 +1,10 @@
+features,model,mean yearly rank correlation,years positive
+earnings,ridge,0.1061645664288684,7/7
+earnings,k-nearest neighbours,0.10226203107803564,6/7
+earnings,LightGBM,0.08516484848899711,6/7
+EVA,ridge,0.06846799699689056,5/7
+EVA,k-nearest neighbours,0.11683287006341612,6/7
+EVA,LightGBM,0.08833539267468019,6/7
+all,ridge,0.0622387131022227,6/7
+all,k-nearest neighbours,0.1132041911109745,5/7
+all,LightGBM,0.11474074189726305,5/7
