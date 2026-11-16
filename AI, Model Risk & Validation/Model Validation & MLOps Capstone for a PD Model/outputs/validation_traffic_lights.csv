@@ -1,0 +1,11 @@
+test,value,status
+Discrimination: test Gini,0.536,green
+Discrimination: worst segment Gini,0.459 (income_type = Pensioner),green
+Benchmark: Gini gain over logistic challenger,+0.051,green
+Calibration: ECE (pp),0.40,green
+Calibration: Hosmer–Lemeshow p,0.002,amber
+Stability: score PSI to production,0.0016,green
+Stability: worst characteristic CSI,1.6374 (credit_term_proxy),red
+Conceptual soundness: largest monotonicity reversal (pp),0.063 (0.7% of applicants),green
+Fairness: adverse-impact ratio by gender,0.922,green
+"Governance: model logged, registered and reloaded identically",home_credit_pd v1,green
