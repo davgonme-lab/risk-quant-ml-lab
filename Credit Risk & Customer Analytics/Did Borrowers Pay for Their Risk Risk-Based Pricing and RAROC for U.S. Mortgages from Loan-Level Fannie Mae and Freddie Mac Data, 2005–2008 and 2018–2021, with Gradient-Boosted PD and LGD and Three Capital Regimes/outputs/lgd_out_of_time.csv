@@ -1,0 +1,7 @@
+,0
+"defaults with a loss, train (2005)",1305.0
+test (2006–2008),7966.0
+mean severity train,0.5341964440551765
+mean severity test,0.5335464780982866
+R² linear (test),0.05535447005300942
+R² LightGBM (test),0.03464330749642719
