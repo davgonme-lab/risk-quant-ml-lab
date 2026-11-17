@@ -1,0 +1,11 @@
+,out-of-time score
+beta: ridge,0.2612003130915621
+beta: LightGBM,0.22806854331149984
+beta: rank corr. ridge,0.7242883632089807
+beta: rank corr. LightGBM,0.6558631739865705
+"beta: previous-cycle beta, rank corr.",0.6808130436017789
+"beta: one beta for all, R²",0.0
+ΔNIM: ridge,0.0406614924646288
+ΔNIM: LightGBM,-0.0780816302610452
+ΔNIM: rank corr. ridge,0.47371018805071735
+ΔNIM: rank corr. LightGBM,0.5318295469466872
