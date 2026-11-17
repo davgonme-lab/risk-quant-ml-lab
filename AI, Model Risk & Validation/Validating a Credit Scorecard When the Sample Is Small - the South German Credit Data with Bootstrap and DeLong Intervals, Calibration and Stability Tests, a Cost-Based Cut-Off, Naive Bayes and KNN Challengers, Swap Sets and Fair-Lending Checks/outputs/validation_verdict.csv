@@ -1,0 +1,8 @@
+area,result,criterion,status
+Discrimination,validation Gini 0.54 (DeLong 95%: 0.42–0.65),lower bound > 0.40,GREEN
+Discrimination,KS 0.46 vs critical 0.17,KS > critical,GREEN
+Calibration,5/5 bands inside Jeffreys interval; HL p = 0.05; z = -0.41,"all bands inside, HL p > 0.05",GREEN
+Stability,PSI 0.018 (no-shift 95th pct 0.079); max CSI 0.035,PSI within sampling noise,GREEN
+Benchmarking,"best challenger Naive Bayes: Gini 0.57, DeLong p 0.09",no significantly better challenger,GREEN
+Use: cut-off,validation cost 0.560 vs 1.500 approving all,cost below the no-model policy,GREEN
+Use: fair lending,foreign workers AIR 1.25; under 25 AIR 0.43,AIR ≥ 0.80,RED
