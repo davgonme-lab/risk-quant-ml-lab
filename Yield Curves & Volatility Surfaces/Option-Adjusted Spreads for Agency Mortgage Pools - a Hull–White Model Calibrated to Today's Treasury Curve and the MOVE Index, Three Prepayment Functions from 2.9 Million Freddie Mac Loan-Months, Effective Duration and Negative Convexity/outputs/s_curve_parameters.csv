@@ -1,0 +1,10 @@
+,0
+turnover CPR,0.11456231413986769
+max refinancing CPR,0.3322742331183219
+incentive at mid-point of S-curve (pp),0.596623767591529
+S-curve width (pp),0.22128006398128802
+burnout decay per 100 pp-months,0.558575012636832
+seasoning ramp (months),12.421236416990666
+seasonal amplitude,0.08421715334835803
+seasonal peak (month),6.092509511087043
+lock-in decay per pp out of the money,0.28154936750034915
