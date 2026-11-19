@@ -26,7 +26,11 @@ packages <- c(
   # credit scoring
   "scorecard", "pROC",
   # machine learning & econometrics
-  "glmnet", "ranger", "xgboost", "urca", "torch",
+  "glmnet", "ranger", "xgboost", "urca", "torch", "class",
+  # robust standard errors and tests
+  "sandwich", "lmtest",
+  # optimisation (linear programming)
+  "lpSolve",
   # state-space models (Kalman filter)
   "dlm",
   # actuarial: claims reserving and stochastic mortality
