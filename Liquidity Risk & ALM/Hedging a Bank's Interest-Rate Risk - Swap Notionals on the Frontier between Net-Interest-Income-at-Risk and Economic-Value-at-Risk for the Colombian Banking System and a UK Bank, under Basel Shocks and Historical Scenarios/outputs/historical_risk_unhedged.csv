@@ -1,0 +1,7 @@
+,Colombian banking system (COP tn),Stylised UK bank (GBP bn)
+"EVE-at-risk, ES 95% (% of equity)",47.42284585050579,20.76799377677314
+"NII-at-risk, ES 95% (% of equity)",1.8585527347409703,1.5335591137626776
+worst Basel ΔEVE (% of equity),-53.016301000949504,-18.464768596216782
+worst Basel ΔNII (% of equity),-1.4542615582671645,-1.352065125225499
+outlier test breached,True,True
+"12m change of 10y (5y GBP) rate, 5th–95th pct (bp)",-219 to 290,-99 to 216
