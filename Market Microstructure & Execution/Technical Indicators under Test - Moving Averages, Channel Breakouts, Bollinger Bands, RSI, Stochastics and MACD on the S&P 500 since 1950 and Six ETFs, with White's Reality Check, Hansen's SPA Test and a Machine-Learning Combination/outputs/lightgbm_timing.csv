@@ -1,0 +1,9 @@
+,0
+AUC (5-day direction),0.5192790551002032
+share of days invested,0.7201938610662358
+LightGBM % a year,6.6687262705371175
+buy and hold % a year,8.681160193973692
+LightGBM Sharpe,0.4848892755249519
+buy-and-hold Sharpe,0.5533937619325615
+LightGBM max drawdown,-0.4640022375082157
+buy-and-hold max drawdown,-0.5677538774277289
