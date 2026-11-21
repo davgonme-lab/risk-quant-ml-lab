@@ -1,0 +1,5 @@
+,,grades with ≥30 loan-years,inversions,adjacent pairs not significantly increasing (p > 5%),best-grade default rate,worst-grade default rate
+holdout,TTC-leaning scorecard,9.0,0.0,1.0,0.000966183574879227,0.4424947549113103
+holdout,PIT model,11.0,0.0,1.0,0.0008556411196675223,0.47817133443163096
+new book,TTC-leaning scorecard,9.0,0.0,1.0,0.0,0.28620689655172415
+new book,PIT model,11.0,0.0,0.0,0.0004524142469359217,0.48569482288828336
