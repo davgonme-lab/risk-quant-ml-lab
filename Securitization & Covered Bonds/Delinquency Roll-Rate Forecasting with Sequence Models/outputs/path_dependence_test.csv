@@ -1,0 +1,3 @@
+group,anchors,actual: 30+ late next month %,actual: 30+ late in 6 months %,Markov t+6 %,Markov + covariates t+6 %,LSTM t+6 %,Transformer t+6 %
+"current, always current in the window",87533,0.47743601728177565,0.9400411071362228,3.1494510799159063,1.6313833995196967,1.304296,1.2416016
+"current, 60+ days late within 12 months",5153,12.381137201630118,24.820492916747526,3.149451079915907,2.6552280452197974,13.7104645,15.348941
