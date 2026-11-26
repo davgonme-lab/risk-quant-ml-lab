@@ -1,0 +1,6 @@
+hedge,notional (million),bid-ask cost (dollars),worst Basel shock (million),1% quantile (million),aggregate limit,bucket limits,Basel outlier test,liquidity buffer (million)
+A. 5y DV01-neutral,4075.70319440541,182843.284367401,-134.548848954953,-215.926207655438,met,breached,met,216.893856870738
+B. 10y DV01-neutral,2308.01913942632,274264.926551102,-29.7038153333834,-58.0516689084418,met,breached,met,231.535909346597
+C. level and slope (5y + 20y),2106.47275448243,332797.323560846,-24.2851663074361,-36.2661522589149,met,breached,met,212.756571507781
+D. minimum cost within limits,2373.1616085564,298036.023369275,-43.7305142299395,-46.0376167855436,met,met,met,199.520338548702
+unhedged,0,0,-322.63313878565,-320.136751066377,breached,breached,breached,
